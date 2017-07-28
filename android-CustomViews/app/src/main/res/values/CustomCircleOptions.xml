@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CustomCircleView">
+        <attr name="radius" format="integer"></attr>
+        <attr name="borderColor" format="color"></attr>
+    </declare-styleable>
+</resources>

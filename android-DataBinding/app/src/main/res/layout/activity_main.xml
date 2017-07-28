@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+        <variable
+            name="person"
+            type="com.example.user.android_databinding.Person"></variable>
+
+
+        <variable
+            name="viewmodel"
+            type="com.example.user.android_databinding.ViewModel"></variable>
+    </data>
+
+    <LinearLayout
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="com.example.user.android_databinding.MainActivity">
+
+        <TextView
+            android:text="@{person.firstName}"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+        <TextView
+            android:text="@{person.lastName}"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:text="Do Something"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="@{viewmodel::doSomething}"/>
+
+        <Button
+            android:onClick="@{(view) -> viewmodel.doSomethingWithPerson(view, person)}"
+            android:text="Do Something with Person"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:addTextChangedListener="@{person.watcherFirstName}"
+            android:hint="First name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:addTextChangedListener="@{person.watcherLastName}"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:onClick="@{(view) -> viewmodel.updatePerson(view, person)}"
+            android:text="Update person"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+</layout>
