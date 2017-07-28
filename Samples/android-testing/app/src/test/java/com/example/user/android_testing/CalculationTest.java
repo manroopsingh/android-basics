@@ -3,7 +3,6 @@ package com.example.user.android_testing;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
-import org.mockito.Mock;
 
 import static junit.framework.Assert.assertEquals;
 import static org.mockito.Mockito.mock;
@@ -24,6 +23,7 @@ public class CalculationTest {
     @Before
     public void setup() throws Exception {
 
+        //one way to mock the dependencies using Mockito class
         multiplication = mock(Multiplication.class);
 
         calculation = new Calculation(multiplication);
