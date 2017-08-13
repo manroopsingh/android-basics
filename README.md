@@ -7,11 +7,12 @@ Simple proof of concept samples for Android in Java
 | Sample        | Description       
 | ------------- |-------------|
 | [Android Views and Layouts](https://github.com/manroopsingh/MAC_Training/tree/master/Poseidon%20Palace/Week1/AndroidViews)| Uses most of the layouts and views used in native Android applications |
-| Broadcast receivers | Using values resource directory for qualifiers|
-| Content provider | Using values resource directory for qualifiers|
-| Services | Using values resource directory for qualifiers|
-| Fragments | Using values resource directory for qualifiers|
-| SQLite | Using values resource directory for qualifiers|
+| Broadcast receivers | System broadcasts, ways to register a receiver and custom permissions with broadcasts|
+| Content provider | Retrieving phone contacts and custom content provider |
+| Services | Bound and Unbound services and system services|
+| Fragments | Ways to add a fragment, Communication among fragments and activities|
+| SQLite | Saving data in a local database|
+| Shared preferences | Saving data in shared preferences|
 | [Testing](https://github.com/manroopsingh/android-basics/tree/master/Samples/android-testing) | Using values resource directory for qualifiers|
 |  [Firebase](https://github.com/manroopsingh/android-basics/tree/master/Samples/android-Firebase)| Using values resource directory for qualifiers|
 | [Data Binding](https://github.com/manroopsingh/android-basics/tree/master/Samples/android-DataBinding) | Using values resource directory for qualifiers|
@@ -20,11 +21,11 @@ Simple proof of concept samples for Android in Java
 ## Core concepts
 | Sample        | Description       
 | ------------- |-------------|
-| [Handle config changes](https://github.com/manroopsingh/MAC_Training/tree/master/Poseidon%20Palace/Week1/SaveDataConfigChange)| Uses callbacks and other methods to save data on configuration changes.   |
+| Handle configuration changes| Uses callbacks and other methods to save data on configuration changes.   |
 | Launch Modes | Using values resource directory for qualifiers|
 
 
-## Third party libraries
+## Thirdparty libraries
 ### Network calls
 | Sample        | Description |       
 | ------------- |-------------|
