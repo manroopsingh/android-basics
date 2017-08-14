@@ -1,28 +1,71 @@
-# Android Basics
+# Android Basics (Work in progress)
 
 Simple proof of concept samples for Android in Java
 
-### Week 1
+## Core components
 
 | Sample        | Description       
-| ------------- |:-------------:|
-| [Android Views and Layouts](https://github.com/manroopsingh/MAC_Training/tree/master/Poseidon%20Palace/Week1/AndroidViews)      | Uses most of the layouts and views used in native Android applications |
-| [Handling config changes](https://github.com/manroopsingh/MAC_Training/tree/master/Poseidon%20Palace/Week1/SaveDataConfigChange)      | Uses callbacks and other methods to save data on configuration changes.   | 
-| Sharing data via Intents | are neat      | 
+| ------------- |-------------|
+| [Android Views and Layouts](https://github.com/manroopsingh/MAC_Training/tree/master/Poseidon%20Palace/Week1/AndroidViews)| Uses most of the layouts and views used in native Android applications |
+| Broadcast receivers | System broadcasts, ways to register a receiver and custom permissions with broadcasts|
+| Content provider | Retrieving phone contacts and custom content provider |
+| Services | Bound and Unbound services and system services|
+| Fragments | Ways to add a fragment, Communication among fragments and activities|
+| SQLite | Saving data in a local database|
+| Shared preferences | Saving data in shared preferences|
+| [Testing](https://github.com/manroopsingh/android-basics/tree/master/Samples/android-testing) | Using values resource directory for qualifiers|
+|  [Firebase](https://github.com/manroopsingh/android-basics/tree/master/Samples/android-Firebase)| Using values resource directory for qualifiers|
+| [Data Binding](https://github.com/manroopsingh/android-basics/tree/master/Samples/android-DataBinding) | Using values resource directory for qualifiers|
+| [Custom Views](https://github.com/manroopsingh/android-basics/tree/master/Samples/android-CustomViews) | Using values resource directory for qualifiers|
 
-### Week 2
+## Core concepts
+| Sample        | Description       
+| ------------- |-------------|
+| Handle configuration changes| Uses callbacks and other methods to save data on configuration changes.   |
+| Launch Modes | Using values resource directory for qualifiers|
 
-| Topics        | Samples       | Cool  |
-| ------------- |:-------------:| -----:|
-| Views      | links | $1600 |
-| col 2 is      | centered      |   $12 |
-| zebra stripes | are neat      |    $1 |
-| zebra stripes | are neat      |    $1 |
 
-Week3
+## Thirdparty libraries
+### Network calls
+| Sample        | Description |       
+| ------------- |-------------|
+| Retrofit2 | Using values resource directory for qualifiers|
+| Okhttp3 | Using values resource directory for qualifiers|
 
-Week4
+### Communication
+| Sample        | Description |       
+| ------------- |-------------|
+| RxJava | Using values resource directory for qualifiers|
+| EventBus | Using values resource directory for qualifiers|
 
-Week5
+### Dependency injection
+| Sample        | Description |       
+| ------------- |-------------|
+| Dagger2 | Using values resource directory for qualifiers|
+| Butterknife | Using values resource directory for qualifiers|
 
-Week6
+### Image loading
+| Sample        | Description |       
+| ------------- |-------------|
+| Glide | Using values resource directory for qualifiers|
+| Picasso | Using values resource directory for qualifiers|
+
+### ORMs
+| Sample        | Description |       
+| ------------- |-------------|
+| Realm | Using values resource directory for qualifiers|
+| Sugar | Using values resource directory for qualifiers|
+
+### Analytics
+| Sample        | Description |       
+| ------------- |-------------|
+| [Mixpanel](https://github.com/manroopsingh/android-basics/tree/master/Samples/android-Mixpanel) | Using values resource directory for qualifiers|
+| Answers | Using values resource directory for qualifiers|
+| Firebase | Using values resource directory for qualifiers|
+| Flurry | Using values resource directory for qualifiers|
+
+### Push notification
+| Sample        | Description |       
+| ------------- |-------------|
+| Firebase | Using values resource directory for qualifiers|
+| Urban Airship | Using values resource directory for qualifiers|

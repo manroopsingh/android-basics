@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="@dimen/mainLayoutPadding"
+        tools:context="com.example.singh.android_fragments.MainActivity">
+
+
+        <fragment
+            android:id="@+id/fragStatic"
+            android:name="com.example.singh.android_fragments.StaticFragment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/coloredFragmentsTitle" />
+
+
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            android:orientation="vertical"
+            android:rowCount="3">
+
+            <Button
+                android:id="@+id/btnAddRed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnSpan="1"
+                android:onClick="addFragment"
+                android:text="Add Red" />
+
+            <Button
+                android:id="@+id/btnAddBlue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="addFragment"
+                android:text="Add Blue" />
+
+            <Button
+                android:id="@+id/btnAddYellow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="addFragment"
+                android:text="Add Yellow" />
+
+            <Button
+                android:id="@+id/btnRemoveRed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:onClick="removeFragment"
+                android:text="Remove Red" />
+
+            <Button
+                android:id="@+id/btnRemoveBlue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:onClick="removeFragment"
+                android:text="Remove Blue" />
+
+            <Button
+                android:id="@+id/btnRemoveYellow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:onClick="removeFragment"
+                android:text="Remove Yellow" />
+
+
+        </GridLayout>
+
+        <FrameLayout
+            android:id="@+id/flColored"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="@dimen/marginTopStd"
+            android:visibility="gone" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/marginTopStd"
+            android:text="@string/carFragmentsTitle" />
+
+        <Button
+            android:id="@+id/btnEnterCarDetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/marginTopStd"
+            android:onClick="addFragment"
+            android:text="@string/btnEnterCarDetails" />
+
+        <FrameLayout
+            android:id="@+id/flFirst"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+        <FrameLayout
+            android:id="@+id/flSecond"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp" />
+
+
+    </LinearLayout>
+
+</ScrollView>

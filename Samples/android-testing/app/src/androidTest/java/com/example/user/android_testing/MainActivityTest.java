@@ -1,16 +1,12 @@
 package com.example.user.android_testing;
 
 import android.support.test.espresso.action.ViewActions;
-import android.support.test.espresso.intent.rule.IntentsTestRule;
 import android.support.test.rule.ActivityTestRule;
-import android.support.test.runner.AndroidJUnit4;
 
 import org.junit.Before;
 import org.junit.Rule;
 import org.junit.Test;
-import org.junit.runner.RunWith;
 
-import static android.support.test.espresso.Espresso.closeSoftKeyboard;
 import static android.support.test.espresso.Espresso.onView;
 import static android.support.test.espresso.action.ViewActions.click;
 import static android.support.test.espresso.action.ViewActions.typeText;
@@ -35,22 +31,23 @@ public class MainActivityTest {
     String stringToBeTyped;
 
 
-//    @Rule
-//    public ActivityTestRule<MainActivity> activityActivityTestRule = new ActivityTestRule<>(MainActivity.class);
-
-
     @Rule
-    public IntentsTestRule<MainActivity> mainActivityIntentsTestRule = new IntentsTestRule<>(MainActivity.class) ;
+    public ActivityTestRule<MainActivity> activityActivityTestRule = new ActivityTestRule<>(MainActivity.class);
+
+
+    //IntentsTestRule is a subclass of the ActivityTestRule class
+//    @Rule
+//    public IntentsTestRule<MainActivity> mainActivityIntentsTestRule = new IntentsTestRule<>(MainActivity.class) ;
 
 
     @Before
-    public void setup(){
+    public void setup() {
 
         stringToBeTyped = "Hello world";
     }
 
     @Test
-    public void testText_mainActivity(){
+    public void testText_mainActivity() {
 
         onView(withId(R.id.edittext))
                 .perform(typeText(stringToBeTyped), ViewActions.closeSoftKeyboard());
@@ -65,7 +62,7 @@ public class MainActivityTest {
     }
 
     @Test
-    public void testIntent_secondActivity(){
+    public void testIntent_secondActivity() {
 
         onView(withId(R.id.edittext))
                 .perform(typeText(stringToBeTyped), ViewActions.closeSoftKeyboard());

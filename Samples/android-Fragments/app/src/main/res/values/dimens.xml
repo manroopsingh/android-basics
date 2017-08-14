@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="mainLayoutPadding">10dp</dimen>
+    <dimen name="fragPadding">5dp</dimen>
+    <dimen name="marginTopStd">5dp</dimen>
+</resources>

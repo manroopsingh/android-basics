@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">android-Fragments</string>
+    <string name="fragName">This fragment is added statically by fragment tag</string>
+    <string name="btnToast">Toast</string>
+    <string name="fragStaticToActivity">From fragment to activity</string>
+
+    <string name="enter_car_details">Please enter the car details below</string>
+    <string name="btnEnterCarDetails">Enter car details</string>
+    <string name="btnAddToCarList">Add to car list</string>
+    <string name="cars_you_added_to_the_list">Car list</string>
+
+    <string name="coloredFragmentsTitle">Adding and replacing fragments</string>
+    <string name="carFragmentsTitle">Fragment to fragment communication example</string>
+</resources>
