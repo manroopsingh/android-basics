@@ -10,11 +10,13 @@
 
 
     <TextView
+        android:gravity="center"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Types of services"/>
 
     <TextView
+        android:gravity="center"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Scheduled services"/>
@@ -31,6 +33,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Started services"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Normal service"/>
 
     <Button
         android:id="@+id/btnNormalService"
@@ -45,6 +51,26 @@
         android:layout_height="wrap_content"
         android:onClick="startServices"
         android:text="Stop Normal service"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Foreground service"/>
+
+
+    <Button
+        android:id="@+id/btnStartForegroundService"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="startServices"
+        android:text="Start Foreground service"/>
+
+
+    <Button
+        android:id="@+id/btnStopForegroundService"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="startServices"
+        android:text="Stop Foreground service"/>
 
 
     <Button

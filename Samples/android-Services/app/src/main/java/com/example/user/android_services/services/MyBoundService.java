@@ -19,7 +19,7 @@ public class MyBoundService extends Service {
 
     public class MyBinder extends Binder {
 
-        MyBoundService getService() {
+        public MyBoundService getService() {
             return MyBoundService.this;
         }
 
@@ -47,6 +47,7 @@ public class MyBoundService extends Service {
     @Override
     public boolean onUnbind(Intent intent) {
 
+        Log.d(TAG, "onUnbind: ");
         return super.onUnbind(intent);
     }
 
@@ -57,7 +58,6 @@ public class MyBoundService extends Service {
     }
 
     public String getStringData() {
-
         Random randomGenerator = new Random();
         String random = String.valueOf(randomGenerator.nextInt(100));
         return "Data from the bound service: " + random;

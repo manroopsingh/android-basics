@@ -2,7 +2,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
           package="com.example.user.android_services">
 
-
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -35,11 +34,15 @@
         <service
             android:name=".services.MyJobService"
             android:enabled="true"
-            android:permission="android.permission.BIND_JOB_SERVICE"
-            >
+            android:permission="android.permission.BIND_JOB_SERVICE">
         </service>
         <service
             android:name=".services.MyScheduleService"
+            android:enabled="true"
+            android:exported="true">
+        </service>
+        <service
+            android:name=".services.MyForegroundService"
             android:enabled="true"
             android:exported="true">
         </service>

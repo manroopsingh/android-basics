@@ -32,7 +32,7 @@ public class MyIntentService extends IntentService {
 
     @Override
     protected void onHandleIntent(Intent intent) {
-        Log.d(TAG, "onHandleIntent: " + intent.getStringExtra("data"));
+        Log.d(TAG, "onHandleIntent: " + intent.getStringExtra("data") + " Thread:" + Thread.currentThread());
 
     }
 
@@ -44,7 +44,6 @@ public class MyIntentService extends IntentService {
 
     @Override
     public void onDestroy() {
-
         Log.d(TAG, "onDestroy: ");
         super.onDestroy();
     }

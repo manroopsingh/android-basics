@@ -16,6 +16,7 @@ import android.view.View;
 import android.widget.Toast;
 
 import com.example.user.android_services.services.MyBoundService;
+import com.example.user.android_services.services.MyForegroundService;
 import com.example.user.android_services.services.MyIntentService;
 import com.example.user.android_services.services.MyJobService;
 import com.example.user.android_services.services.MyService;
@@ -38,6 +39,7 @@ public class MainActivity extends AppCompatActivity {
         Intent normalIntent = new Intent(this, MyService.class);
         Intent intIntent = new Intent(this, MyIntentService.class);
         Intent boundIntent = new Intent(this, MyBoundService.class);
+        Intent foregroundIntent = new Intent(this, MyForegroundService.class);
 
         switch (view.getId()) {
 
@@ -57,6 +59,18 @@ public class MainActivity extends AppCompatActivity {
 
                 stopService(normalIntent);
                 break;
+
+            case R.id.btnStartForegroundService:
+
+                startService(foregroundIntent);
+                break;
+
+            case R.id.btnStopForegroundService:
+
+
+
+                break;
+
 
 
             case R.id.btnIntentService:
@@ -80,7 +94,7 @@ public class MainActivity extends AppCompatActivity {
                 }
                 break;
         }
-        Toast.makeText(myBoundService, "Check your logs", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "Check your logs", Toast.LENGTH_SHORT).show();
 
     }
 
