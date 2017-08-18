@@ -20,7 +20,7 @@ public class MyJobService extends JobService {
     @Override
     public boolean onStartJob(JobParameters jobParameters) {
         Log.d(TAG, "onStartJob: ");
-        Intent intent = new Intent(getApplicationContext(),MyScheduleService.class );
+        Intent intent = new Intent(getApplicationContext(), MyScheduleService.class);
         getApplicationContext().startService(intent);
 
         return false;
