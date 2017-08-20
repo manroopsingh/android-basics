@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.aidl_server.MainActivity">
+
+    <TextView
+        style="@style/Descriptions"
+        android:id="@+id/tvServerDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        style="@style/Titles"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Original Data" />
+
+    <TextView
+        android:id="@+id/tvOriginalData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        style="@style/Titles"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Data added from Client app" />
+    <Button
+        android:text="Update data added"
+        android:id="@+id/btnAddedData"
+        android:onClick="updateAddedData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tvAddedData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

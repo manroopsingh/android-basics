@@ -1,0 +1,1 @@
+include ':aidl_client', ':aidl_server'
