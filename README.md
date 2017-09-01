@@ -6,14 +6,14 @@ Simple proof of concept samples for Android in Java
 
 | Sample        | Description       
 | ------------- |-------------|
-| [Android Views and Layouts](https://github.com/manroopsingh/MAC_Training/tree/master/Poseidon%20Palace/Week1/AndroidViews)| Uses most of the layouts and views used in native Android applications |
-| Broadcast receivers | System broadcasts, ways to register a receiver and custom permissions with broadcasts|
+| [Android Views and Layouts](https://github.com/manroopsingh/android-basics/tree/master/Samples/android-ViewsViewGroups) | Uses most of the layouts and views used in native Android applications |
+| [Broadcast Receiver](https://github.com/manroopsingh/android-basics/tree/master/Samples/android-BroadcastReceiver)  | System broadcasts, ways to register a receiver and custom permissions with broadcasts|
 | Content provider | Retrieving phone contacts and custom content provider |
-| Services | Bound and Unbound services and system services|
-| Fragments | Ways to add a fragment, Communication among fragments and activities|
+| [Services](https://github.com/manroopsingh/android-basics/tree/master/Samples/android-Services)  | Bound, Unbound services and system services|
+| [Fragments](https://github.com/manroopsingh/android-basics/tree/master/Samples/android-Fragments)  | Ways to add a fragment, Communication among fragments and activities|
 | SQLite | Saving data in a local database|
 | Shared preferences | Saving data in shared preferences|
-| [Testing](https://github.com/manroopsingh/android-basics/tree/master/Samples/android-testing) | Using values resource directory for qualifiers|
+| [Testing](https://github.com/manroopsingh/android-basics/tree/master/Samples/android-testing) | Making test cases using JUnit, Espresso, Mockito and Powermock|
 |  [Firebase](https://github.com/manroopsingh/android-basics/tree/master/Samples/android-Firebase)| Using values resource directory for qualifiers|
 | [Data Binding](https://github.com/manroopsingh/android-basics/tree/master/Samples/android-DataBinding) | Using values resource directory for qualifiers|
 | [Custom Views](https://github.com/manroopsingh/android-basics/tree/master/Samples/android-CustomViews) | Using values resource directory for qualifiers|
@@ -61,7 +61,8 @@ Simple proof of concept samples for Android in Java
 | ------------- |-------------|
 | [Mixpanel](https://github.com/manroopsingh/android-basics/tree/master/Samples/android-Mixpanel) | Using values resource directory for qualifiers|
 | Answers | Using values resource directory for qualifiers|
-| Firebase | Using values resource directory for qualifiers|
+| [Crashlytics](https://github.com/manroopsingh/android-basics/tree/master/Samples/android-Crashlytics) | Using values resource directory for qualifiers|
+| [Firebase analytics](https://github.com/manroopsingh/android-basics/tree/master/Samples/android-Firebase)  | Using values resource directory for qualifiers|
 | Flurry | Using values resource directory for qualifiers|
 
 ### Push notification
