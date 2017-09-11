@@ -3,10 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/aidl_client/aidl_client.iml" filepath="$PROJECT_DIR$/aidl_client/aidl_client.iml" />
-      <module fileurl="file://$PROJECT_DIR$/aidl_client/aidl_client.iml" filepath="$PROJECT_DIR$/aidl_client/aidl_client.iml" />
       <module fileurl="file://$PROJECT_DIR$/aidl_server/aidl_server.iml" filepath="$PROJECT_DIR$/aidl_server/aidl_server.iml" />
-      <module fileurl="file://$PROJECT_DIR$/aidl_server/aidl_server.iml" filepath="$PROJECT_DIR$/aidl_server/aidl_server.iml" />
-      <module fileurl="file://$PROJECT_DIR$/android-AIDL.iml" filepath="$PROJECT_DIR$/android-AIDL.iml" />
       <module fileurl="file://$PROJECT_DIR$/android-AIDL.iml" filepath="$PROJECT_DIR$/android-AIDL.iml" />
     </modules>
   </component>

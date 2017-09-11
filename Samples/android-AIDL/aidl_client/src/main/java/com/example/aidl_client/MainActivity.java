@@ -20,7 +20,9 @@ public class MainActivity extends AppCompatActivity {
 
 
     private static final String TAG = "MainActivityTag";
-    TextView textView;
+    TextView tvConnectionStatus;
+    TextView tvDataTransmitted;
+    TextView tvDataReceived;
     IRemoteService remoteService;
 
 
@@ -28,32 +30,40 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-    }
 
+        tvConnectionStatus = (TextView) findViewById(R.id.tvConnectionStatus);
+        tvDataTransmitted = (TextView) findViewById(R.id.tvDataTransmitted);
+        tvDataReceived = (TextView) findViewById(R.id.tvDataReceived);
+        tvConnectionStatus.setText("Disconnected");
+    }
 
 
     public void connectRemoteService(View view) throws RemoteException {
 
-        switch (view.getId()){
+        switch (view.getId()) {
 
             case R.id.btnBindService:
                 Log.d(TAG, "connectRemoteService: bindService");
 
-                ComponentName aidlComponent = new ComponentName("com.example.aidl_server","com.example.aidl_server.MyAIDLService");
+                ComponentName aidlComponent = new ComponentName("com.example.aidl_server", "com.example.aidl_server.MyAIDLService");
                 Intent remoteIntent = new Intent();
                 remoteIntent.setComponent(aidlComponent);
-                bindService(remoteIntent, serviceConnection,BIND_AUTO_CREATE);
+                bindService(remoteIntent, serviceConnection, BIND_AUTO_CREATE);
 
                 break;
 
             case R.id.btnSavePerson:
-
-                remoteService.savePerson(new Person("John" + getRandom(), getRandom(), "male", new Date()));
+                Person person = new Person("John" + getRandom(), getRandom(), "male", new Date());
+                remoteService.savePerson(person);
+                tvDataTransmitted.setText("A random person object :  " + person.toString() + "was added to the bind service");
 
                 break;
             case R.id.btnGetPersonList:
 
+                //logging to check the size of the person list
                 Log.d(TAG, "connectRemoteService: " + remoteService.getPersonList().size());
+                
+                tvDataReceived.setText(remoteService.getPersonList().toString());
                 break;
         }
 
@@ -66,13 +76,14 @@ public class MainActivity extends AppCompatActivity {
         public void onServiceConnected(ComponentName componentName, IBinder iBinder) {
 
             Log.d(TAG, "onServiceConnected: ");
+            tvConnectionStatus.setText("Connected");
             remoteService = IRemoteService.Stub.asInterface(iBinder);
 
         }
 
         @Override
         public void onServiceDisconnected(ComponentName componentName) {
-
+            tvConnectionStatus.setText("Disconnected");
             Log.d(TAG, "onServiceDisconnected: ");
         }
     };

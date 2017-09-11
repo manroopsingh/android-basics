@@ -1,37 +1,74 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context="com.example.aidl_client.MainActivity">
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              tools:context="com.example.aidl_client.MainActivity">
 
     <Button
         android:id="@+id/btnBindService"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="connectRemoteService"
-        android:text="BindService" />
+        android:text="BindService"/>
 
     <Button
         android:id="@+id/btnSavePerson"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="connectRemoteService"
-        android:text="Save person" />
+        android:text="Save person"/>
 
     <Button
         android:id="@+id/btnGetPersonList"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="connectRemoteService"
-        android:text="Get person list" />
+        android:text="Get person list"/>
+
+
+    <!--Connection status-->
+    <TextView
+        android:textColor="@color/colorAccent"
+        android:textSize="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Connection status"/>
 
     <TextView
-
-        android:id="@+id/tvPerson"
+        android:id="@+id/tvConnectionStatus"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"/>
+
+
+    <!--Data Transmitted-->
+    <TextView
+        android:textColor="@color/colorAccent"
+        android:textSize="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Data transmitted"/>
+
+    <TextView
+        android:id="@+id/tvDataTransmitted"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+    <!--Data Received-->
+    <TextView
+        android:textColor="@color/colorAccent"
+        android:textSize="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Data received"/>
+
+    <TextView
+        android:id="@+id/tvDataReceived"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
 
 </LinearLayout>
