@@ -48,7 +48,7 @@ public class MainActivity extends AppCompatActivity
 
     public void addFragment(View view) {
 
-        ;
+
         FragmentManager fragmentManager = getSupportFragmentManager();
         switch (view.getId()) {
 

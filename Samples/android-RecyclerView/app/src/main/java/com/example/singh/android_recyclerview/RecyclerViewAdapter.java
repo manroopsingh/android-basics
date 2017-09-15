@@ -1,5 +1,6 @@
 package com.example.singh.android_recyclerview;
 
+import android.content.Context;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -8,21 +9,57 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 /**
  * Created by singh on 13-Sep-17.
  */
 
-public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapter.ViewHolder> {
+public class RecyclerViewAdapter
+        extends
+        RecyclerView.Adapter<RecyclerViewAdapter.ViewHolder>
+        implements
+        CustomItemTouchHelperAdapter
+        , View.OnClickListener {
 
+    //create an instance of the listener
+    private onItemClicked listener;
 
     //create the list of data to populate the recyclerView
     List<DummyData> dummyDataList = new ArrayList<>();
 
     //constructor to initialize the data
-    public RecyclerViewAdapter(List<DummyData> dummyDataList) {
+    public RecyclerViewAdapter(Context context, List<DummyData> dummyDataList) {
         this.dummyDataList = dummyDataList;
+        listener = (onItemClicked) context;
+    }
+
+    //implemented from itemTouchHelperAdapter
+    //for moving the data positions in the list
+    @Override
+    public boolean onItemMove(int fromPosition, int toPosition) {
+        if (fromPosition < toPosition) {
+            for (int i = fromPosition; i < fromPosition; i++) {
+                Collections.swap(dummyDataList, i, i + 1);
+            }
+        } else {
+            for (int i = fromPosition; i > toPosition; i--) {
+                Collections.swap(dummyDataList, i, i - 1);
+            }
+        }
+        notifyItemMoved(fromPosition, toPosition);
+
+        return true;
+    }
+
+    //implemented from itemTouchHelperAdapter
+    //for deleting the item
+    @Override
+    public void onItemDismiss(int position) {
+        dummyDataList.remove(position);
+        notifyItemRemoved(position);
+
     }
 
     //create an inner viewholder class to hold all the views for the item
@@ -36,7 +73,6 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
             super(itemView);
             imageView = itemView.findViewById(R.id.ivSomeImage);
             textView = itemView.findViewById(R.id.tvSomeText);
-
         }
     }
 
@@ -59,15 +95,38 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
     public void onBindViewHolder(ViewHolder holder, int position) {
 
         DummyData dummyData = dummyDataList.get(position);
-        holder.imageView.setBackground(dummyData.getSomeImage());
+
+        holder.imageView.setImageBitmap(dummyData.getSomeImage());
         holder.textView.setText(dummyData.getSomeText());
 
-
+        //set onclick listener for the views in the holder
+        holder.itemView.setOnClickListener(this);
+        holder.textView.setOnClickListener(this);
     }
 
     //this method returns the total number of items in the list
     @Override
     public int getItemCount() {
-        return 0;
+        return dummyDataList.size();
+    }
+
+    //implemented from View.OnClickListener to handle on click events
+    @Override
+    public void onClick(View view) {
+
+        switch (view.getId()) {
+            case R.id.tvSomeText:
+                listener.sendDataToActivity("MainActivity: TextView clicked");
+                break;
+
+            case -1:
+                listener.sendDataToActivity("MainActivity: ItemView clicked");
+                break;
+        }
+    }
+
+    //create an interface to communicate with the main activity
+    interface onItemClicked {
+        void sendDataToActivity(String data);
     }
 }

@@ -12,7 +12,8 @@ import android.widget.EditText;
 
 import com.example.singh.android_fragments.R;
 
-public class CarInputFragment extends Fragment {
+public class
+CarInputFragment extends Fragment {
 
     private OnFragmentInteractionListener mListener;
     private EditText etModel;

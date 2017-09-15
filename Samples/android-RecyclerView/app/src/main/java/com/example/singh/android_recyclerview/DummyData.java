@@ -1,5 +1,6 @@
 package com.example.singh.android_recyclerview;
 
+import android.graphics.Bitmap;
 import android.media.Image;
 
 /**
@@ -9,9 +10,10 @@ import android.media.Image;
 public class DummyData {
 
     String someText;
-    Image someImage;
 
-    public DummyData(String someText, Image someImage) {
+    Bitmap someImage;
+
+    public DummyData(String someText, Bitmap someImage) {
         this.someText = someText;
         this.someImage = someImage;
     }
@@ -24,11 +26,11 @@ public class DummyData {
         this.someText = someText;
     }
 
-    public Image getSomeImage() {
+    public Bitmap getSomeImage() {
         return someImage;
     }
 
-    public void setSomeImage(Image someImage) {
+    public void setSomeImage(Bitmap someImage) {
         this.someImage = someImage;
     }
 }
