@@ -2,7 +2,11 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
           package="com.example.user.android_broadcastreceiver">
 
-    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <!--The Receiver application must use the custom permission to receive the broadcast-->
+    <uses-permission android:name="com.example.permission"/>
+
+    <!--The sender application must declare custom permission for restricting broadcasts-->
+    <permission android:name="com.example.permission"/>
 
     <application
         android:allowBackup="true"
@@ -23,13 +27,14 @@
             android:name=".receivers.MyStaticReceiver"
             android:enabled="true"
             android:exported="true">
-
             <intent-filter>
 
-                <action android:name="com.action.static.reciever"/>
+                <!--add a system broadcast-->
+                <action android:name="android.intent.action.AIRPLANE_MODE"/>
+                <!--add a custom action-->
+                <action android:name="my.custom.action.one"/>
 
             </intent-filter>
-
         </receiver>
     </application>
 
