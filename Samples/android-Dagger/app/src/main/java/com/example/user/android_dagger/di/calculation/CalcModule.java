@@ -1,4 +1,4 @@
-package com.example.user.android_dagger.dagger.calculation;
+package com.example.user.android_dagger.di.calculation;
 
 import com.example.user.android_dagger.calculation.Addition;
 import com.example.user.android_dagger.calculation.Multiplication;

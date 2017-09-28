@@ -1,8 +1,7 @@
-package com.example.user.android_dagger.dagger.calculation;
+package com.example.user.android_dagger.di.calculation;
 
-import com.example.user.android_dagger.SecondActivity;
-import com.example.user.android_dagger.calculation.Calculation;
 import com.example.user.android_dagger.MainActivity;
+import com.example.user.android_dagger.calculation.Calculation;
 
 import javax.inject.Singleton;
 
@@ -23,5 +22,5 @@ public interface CalcComponent {
     //and injecting the Addition class as a dependency in Calculation class
     Calculation getCalculation();
 
-    void injectMultiplication2(SecondActivity secondActivity);
+    //void injectMultiplication2(SecondActivity secondActivity);
 }
