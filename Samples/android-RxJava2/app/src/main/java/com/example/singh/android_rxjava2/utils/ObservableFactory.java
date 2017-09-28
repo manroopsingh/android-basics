@@ -6,5 +6,5 @@ package com.example.singh.android_rxjava2.utils;
 
 public class ObservableFactory {
 
-    
+
 }
