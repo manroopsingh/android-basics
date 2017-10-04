@@ -21,7 +21,9 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity
+implements
+FirebaseAuth.AuthStateListener{
 
 
     private static final String TAG = "MainActivityTag";
@@ -29,6 +31,7 @@ public class MainActivity extends AppCompatActivity {
     TextView textView;
     FirebaseDatabase database;
 
+    //Firebase authentication
     private FirebaseAuth mAuth;
     private FirebaseAuth.AuthStateListener mAuthListener;
 
@@ -42,9 +45,11 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        //receive data from the push notification
+        //you can redirect the user to the respective activity or fragment
         Toast.makeText(this, getIntent().getStringExtra("data"), Toast.LENGTH_SHORT).show();
 
-
+        //Initialize the firebase authentication instance
         mAuth = FirebaseAuth.getInstance();
         Log.d(TAG, "onCreate: " + mAuth);
 
@@ -180,6 +185,11 @@ public class MainActivity extends AppCompatActivity {
                         // ...
                     }
                 });
+
+    }
+
+    @Override
+    public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {
 
     }
 }

@@ -76,17 +76,32 @@ public class RecyclerViewAdapter
         }
     }
 
+
     //this method is used to define different views to inflate for view holder
     @Override
     public int getItemViewType(int position) {
-        return super.getItemViewType(position);
+        if (position % 2 == 0) return 1;
+        else return 2;
+
 
     }
 
     //this method is used to inflate the view and initialize the view holder
     @Override
     public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.rv_list_item_type1, parent, false);
+
+        //choose a different layout for each item based on position or data
+        int itemLayout = 0;
+        switch (viewType) {
+            case 1:
+                itemLayout = R.layout.rv_list_item_type1;
+                break;
+            case 2:
+                itemLayout = R.layout.rv_list_item_type2;
+                break;
+        }
+        View view = LayoutInflater.from(parent.getContext()).inflate(itemLayout, parent, false);
+
         return new ViewHolder(view);
     }
 
