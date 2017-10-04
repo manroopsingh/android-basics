@@ -1,6 +1,7 @@
 package com.example.user.android_dagger.di.component;
 
-import com.example.user.android_dagger.SecondActivity;
+import com.example.user.android_dagger.di.module.MainActivityModule;
+import com.example.user.android_dagger.di.module.SecondActivityModule;
 import com.example.user.android_dagger.di.module.UserModule;
 import com.example.user.android_dagger.di.scopes.UserScope;
 
@@ -14,8 +15,9 @@ import dagger.Subcomponent;
 @Subcomponent(modules = UserModule.class)
 public interface UserComponent {
 
-   // void inject(MainActivity mainActivity);
-    void inject(SecondActivity secondActivity);
+    MainActivityComponent plus(MainActivityModule mainActivityModule);
+    SecondActivityComponent plus(SecondActivityModule secondActivityModule);
+
 
 
 }

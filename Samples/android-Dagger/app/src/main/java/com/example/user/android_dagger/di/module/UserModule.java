@@ -1,7 +1,6 @@
 package com.example.user.android_dagger.di.module;
 
 import com.example.user.android_dagger.User;
-import com.example.user.android_dagger.di.scopes.UserScope;
 
 import dagger.Module;
 import dagger.Provides;
@@ -20,7 +19,6 @@ public class UserModule {
     }
 
     @Provides
-    @UserScope
     User provideUser(){
         return user;
     }
