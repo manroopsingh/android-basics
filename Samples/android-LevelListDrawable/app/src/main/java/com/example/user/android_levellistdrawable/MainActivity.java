@@ -21,10 +21,10 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+
+
         imageView = (ImageView) findViewById(R.id.imageView);
         levelListDrawable = (LevelListDrawable) imageView.getBackground();
-
-        //imageView.setImageLevel(1);
 
     }
 
@@ -39,6 +39,8 @@ public class MainActivity extends AppCompatActivity {
         while(currentLevel == randomLevel){
             randomLevel = getRandomLevel();
         }
+
+
 
         levelListDrawable.setLevel(randomLevel);
 
