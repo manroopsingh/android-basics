@@ -1,6 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-    <level-list xmlns:android="http://schemas.android.com/apk/res/android">
-        <item android:maxLevel="0" android:drawable="@android:drawable/ic_dialog_email" />
-        <item android:maxLevel="1" android:drawable="@android:drawable/ic_delete" />
-    </level-list>
+<level-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:drawable="@android:drawable/ic_dialog_email"
+        android:maxLevel="0"/>
+    <item
+        android:drawable="@android:drawable/ic_delete"
+        android:maxLevel="1"/>
+    <item
+        android:drawable="@android:drawable/ic_btn_speak_now"
+        android:maxLevel="2"/>
+    <item
+        android:drawable="@android:drawable/ic_dialog_alert"
+        android:maxLevel="3"/>
+    <item
+        android:drawable="@android:drawable/ic_dialog_dialer"
+        android:maxLevel="4"/>
+    <item
+        android:drawable="@android:drawable/ic_dialog_map"
+        android:maxLevel="5"/>
+</level-list>
