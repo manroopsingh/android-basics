@@ -20,7 +20,7 @@ public class TestAnimal {
         tiger.run(3);
         tiger.run(3, 30);
 //        calling the same method name with different argument list
-        
+
 //        Dynamic polymorphism is method overriding
         animal.sleep();
 //        The JVM use Virtual method invocation to call the sleep method
