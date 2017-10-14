@@ -35,7 +35,7 @@ public class BalancingParenthesis {
                         return false;
                     break;
             }
-            
+
         }
         return stack.isEmpty();
     }
