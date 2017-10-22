@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">android-Bluetooth</string>
     <string name="location_permission_rationale">Please allow location permission to get more accurate results. Would you like to grant it?</string>
+    <string name="ble_not_supported">Bluetooth low energy not supported</string>
+    <string name="unknown_service">Unknown service</string>
+    <string name="unknown_characteristic">Unknown characteristic</string>
 </resources>

@@ -28,7 +28,7 @@ import android.widget.Toast;
 import java.util.ArrayList;
 import java.util.List;
 
-public class DeviceListActivity extends AppCompatActivity {
+public class DeviceListActivity extends AppCompatActivity implements DeviceListAdapter.ItemClickListener{
 
     private static final int REQUEST_ENABLE_BT = 10;
     private static final String TAG = "BluetoothActivityTag";
@@ -67,8 +67,8 @@ public class DeviceListActivity extends AppCompatActivity {
     }
 
     private void requestLocationPermission() {
-        if(ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION)
-                != PackageManager.PERMISSION_GRANTED){
+        if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION)
+                != PackageManager.PERMISSION_GRANTED) {
 
             ActivityCompat.requestPermissions(this,
                     new String[]{Manifest.permission.ACCESS_FINE_LOCATION},
@@ -110,12 +110,8 @@ public class DeviceListActivity extends AppCompatActivity {
                     alertDialog.show();
 
 
-
-
                 }
                 return;
-
-
 
             }
 
@@ -193,6 +189,7 @@ public class DeviceListActivity extends AppCompatActivity {
     }
 
 
+    //callback for Android versions <21
     BluetoothAdapter.LeScanCallback leScanCallback = new BluetoothAdapter.LeScanCallback() {
         @Override
         public void onLeScan(final BluetoothDevice device, int rssi, byte[] scanRecord) {
@@ -203,6 +200,7 @@ public class DeviceListActivity extends AppCompatActivity {
         }
     };
 
+    //callback for Android versions > 21
     ScanCallback scanCallback = new ScanCallback() {
         @Override
         public void onScanResult(int callbackType, ScanResult result) {
@@ -222,11 +220,20 @@ public class DeviceListActivity extends AppCompatActivity {
         }
     };
 
+    //button click for scanning the devices
     public void scanDevices(View view) {
 
         deviceListAdapter.clear();
         scanLeDevice(true);
 
+
+    }
+
+    @Override
+    public void onItemClick(BluetoothDevice device) {
+        Intent intent = new Intent(this, DeviceDetailActivity.class);
+        intent.putExtra(Constants.KEY.DEVICE, device);
+        startActivity(intent);
 
     }
 }
