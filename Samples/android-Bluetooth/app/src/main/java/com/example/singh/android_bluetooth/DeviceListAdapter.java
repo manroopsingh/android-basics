@@ -1,6 +1,7 @@
 package com.example.singh.android_bluetooth;
 
 import android.bluetooth.BluetoothDevice;
+import android.content.Context;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -19,6 +20,8 @@ public class DeviceListAdapter extends RecyclerView.Adapter<DeviceListAdapter.Vi
 
     public static final String TAG = "DeviceListAdapterTag";
     List<BluetoothDevice> deviceList;
+    private Context context;
+    ItemClickListener listener;
 
     public DeviceListAdapter() {
         this.deviceList = new ArrayList<>();
@@ -42,6 +45,7 @@ public class DeviceListAdapter extends RecyclerView.Adapter<DeviceListAdapter.Vi
 
     @Override
     public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+        context = parent.getContext();
         View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.device_list_item, parent, false);
         return new ViewHolder(view);
     }
@@ -52,6 +56,7 @@ public class DeviceListAdapter extends RecyclerView.Adapter<DeviceListAdapter.Vi
         holder.tvDeviceName.setText(device.getName());
         holder.tvDeviceAddress.setText(device.getAddress());
 
+
     }
 
     @Override
@@ -59,7 +64,8 @@ public class DeviceListAdapter extends RecyclerView.Adapter<DeviceListAdapter.Vi
         return deviceList.size();
     }
 
-    public class ViewHolder extends RecyclerView.ViewHolder {
+
+    public class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener{
 
 
         private final TextView tvDeviceAddress;
@@ -70,6 +76,22 @@ public class DeviceListAdapter extends RecyclerView.Adapter<DeviceListAdapter.Vi
             tvDeviceName = (TextView) itemView.findViewById(R.id.tvDeviceName);
             tvDeviceAddress = (TextView) itemView.findViewById(R.id.tvDeviceAddress);
 
+            //setting click listeners
+            itemView.setOnClickListener(this);
+
         }
+
+        @Override
+        public void onClick(View v) {
+            listener = (ItemClickListener) context;
+            listener.onItemClick(deviceList.get(getAdapterPosition()));
+
+        }
+    }
+
+
+    interface ItemClickListener{
+
+        void onItemClick(BluetoothDevice device);
     }
 }
