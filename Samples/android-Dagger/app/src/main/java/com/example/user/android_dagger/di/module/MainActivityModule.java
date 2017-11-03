@@ -1,6 +1,6 @@
 package com.example.user.android_dagger.di.module;
 
-import com.example.user.android_dagger.MainActivity;
+import com.example.user.android_dagger.view.mainactivity.MainActivity;
 
 import dagger.Module;
 import dagger.Provides;
@@ -16,7 +16,9 @@ public class MainActivityModule {
 
     public MainActivityModule(MainActivity mainActivity) {
         this.mainActivity = mainActivity;
+
     }
+
 
     @Provides
     MainActivity providesMainActivity(){

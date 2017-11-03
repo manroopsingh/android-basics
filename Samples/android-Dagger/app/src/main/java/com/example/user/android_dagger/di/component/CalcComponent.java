@@ -1,13 +1,18 @@
 package com.example.user.android_dagger.di.component;
 
 import com.example.user.android_dagger.calculation.Calculation;
+import com.example.user.android_dagger.di.module.CalcModule;
+
+import javax.inject.Singleton;
+
+import dagger.Subcomponent;
 
 /**
  * Created by singh on 26-Sep-17.
  */
 
-//@Singleton
-//@Subcomponent(modules = CalcModule.class)
+@Singleton
+@Subcomponent(modules = CalcModule.class)
 public interface CalcComponent {
 
 

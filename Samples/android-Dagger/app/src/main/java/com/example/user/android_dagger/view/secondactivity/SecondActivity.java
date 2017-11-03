@@ -1,9 +1,12 @@
-package com.example.user.android_dagger;
+package com.example.user.android_dagger.view.secondactivity;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 
+import com.example.user.android_dagger.MyApplication;
+import com.example.user.android_dagger.R;
+import com.example.user.android_dagger.User;
 import com.example.user.android_dagger.di.module.SecondActivityModule;
 
 import javax.inject.Inject;
