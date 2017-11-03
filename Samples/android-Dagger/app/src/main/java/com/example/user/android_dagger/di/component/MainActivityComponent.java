@@ -1,6 +1,6 @@
 package com.example.user.android_dagger.di.component;
 
-import com.example.user.android_dagger.MainActivity;
+import com.example.user.android_dagger.view.mainactivity.MainActivity;
 import com.example.user.android_dagger.di.module.MainActivityModule;
 
 import dagger.Subcomponent;

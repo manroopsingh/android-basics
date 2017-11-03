@@ -1,6 +1,6 @@
 package com.example.user.android_dagger.di.module;
 
-import com.example.user.android_dagger.SecondActivity;
+import com.example.user.android_dagger.view.secondactivity.SecondActivity;
 
 import dagger.Module;
 import dagger.Provides;

@@ -18,12 +18,10 @@ public interface UserDao {
     List<User> getAllUsers();
 
 
-    @Query("SELECT * FROM user where uid IN (:userId)")
+    @Query("SELECT * FROM user where uid IN (:userIds)")
     List<User> getUsersById(int[] userIds);
 
-    @Query(("SELECT * FROM user where" +
-            "first_name LIKE :first AND" +
-            "last_name LIKE :last LIMIT 1"))
+    @Query(("SELECT * FROM user where first_name LIKE :first AND last_name LIKE :last LIMIT 1"))
     User getUserByName(String first, String last);
 
     @Insert
