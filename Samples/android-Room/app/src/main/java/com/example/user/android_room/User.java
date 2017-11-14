@@ -8,6 +8,8 @@ import android.arch.persistence.room.PrimaryKey;
  * Created by singh on 9/29/17.
  */
 
+//    every class need to be declared as entity if you want it to be a table
+//    by default it uses the class name as the table name
 @Entity
 public class User {
 

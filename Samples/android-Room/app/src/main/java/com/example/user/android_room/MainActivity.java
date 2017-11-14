@@ -37,8 +37,10 @@ public class MainActivity extends AppCompatActivity {
 
         String firstName = etFirstName.getText().toString();
         String lastName = etLastName.getText().toString();
+
         final User user = new User(new Random().nextInt(100), firstName, lastName);
 
+//        data queries are supposed to be done is a worked thread when using Room
         new Thread(new Runnable() {
             @Override
             public void run() {
@@ -53,6 +55,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void getUserObjects(View view) {
 
+//        retrieve the whole list of users in worker thread
         new Thread(new Runnable() {
             @Override
             public void run() {
