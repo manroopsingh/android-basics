@@ -6,19 +6,21 @@ import dagger.Module;
 import dagger.Provides;
 
 /**
- * Created by singh on 28-Sep-17.
+ * Author: singh on: 28-Sep-17.
  */
 @Module
 public class AppModule {
 
-    Application application;
+    private Application application;
 
-    public AppModule(Application application) {
+    public AppModule(Application application)
+    {
         this.application = application;
     }
 
     @Provides
-    Application provicesApplication(){
+    Application providesApplication()
+    {
         return application;
     }
 }

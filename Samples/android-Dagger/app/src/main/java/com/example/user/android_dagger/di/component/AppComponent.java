@@ -1,6 +1,7 @@
 package com.example.user.android_dagger.di.component;
 
 import com.example.user.android_dagger.di.module.AppModule;
+import com.example.user.android_dagger.di.module.CalcModule;
 import com.example.user.android_dagger.di.module.UserModule;
 
 import dagger.Component;
@@ -14,5 +15,5 @@ import dagger.Component;
 public interface AppComponent {
 
     UserComponent plus(UserModule userModule);
-//    CalcComponent plus(CalcModule calcModule);
+    CalcComponent plus(CalcModule calcModule);
 }
