@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">SecuringData</string>
+    <string name="lock_title">Lock screen</string>
+    <string name="lock_body">Please lock your screen to provide more security</string>
+    <string name="lock_settings">Settings</string>
+    <string name="lock_exit">Exit</string>
+</resources>
