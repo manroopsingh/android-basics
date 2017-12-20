@@ -1,5 +1,6 @@
 package com.example.singh.android_mvp.view.personlist;
 
+import android.content.Context;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -18,8 +19,11 @@ import java.util.List;
 public class PersonListAdapter extends RecyclerView.Adapter<PersonListAdapter.ViewHolder> {
 
     List<Person> personList;
+    onPersonListInteraction personListInteraction;
 
-    public PersonListAdapter(List<Person> personList) {
+
+    public PersonListAdapter(Context context,List<Person> personList) {
+        this.personListInteraction = (onPersonListInteraction) context;
         this.personList = personList;
     }
 
@@ -48,7 +52,7 @@ public class PersonListAdapter extends RecyclerView.Adapter<PersonListAdapter.Vi
     }
 
 
-    class ViewHolder extends RecyclerView.ViewHolder {
+    class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener{
         TextView tvPersonFirstName,
                 tvPersonLastName,
                 tvPersonGender,
@@ -60,8 +64,19 @@ public class PersonListAdapter extends RecyclerView.Adapter<PersonListAdapter.Vi
             tvPersonLastName = itemView.findViewById(R.id.tvPersonLastName);
             tvPersonAge = itemView.findViewById(R.id.tvPersonAge);
             tvPersonGender= itemView.findViewById(R.id.tvPersonGender);
+            itemView.setOnClickListener(this);
 
 
         }
+
+        @Override
+        public void onClick(View v) {
+            personListInteraction.onPersonClicked(personList.get(getAdapterPosition()));
+        }
+    }
+
+    interface onPersonListInteraction{
+
+        void onPersonClicked(Person person);
     }
 }

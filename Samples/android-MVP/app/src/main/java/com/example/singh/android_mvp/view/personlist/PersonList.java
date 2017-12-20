@@ -1,5 +1,6 @@
 package com.example.singh.android_mvp.view.personlist;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
@@ -8,10 +9,12 @@ import android.widget.Toast;
 
 import com.example.singh.android_mvp.R;
 import com.example.singh.android_mvp.model.Person;
+import com.example.singh.android_mvp.utils.Constants;
+import com.example.singh.android_mvp.view.persondetail.PersonDetail;
 
 import java.util.List;
 
-public class PersonList extends AppCompatActivity implements PersonListContract.View {
+public class PersonList extends AppCompatActivity implements PersonListContract.View, PersonListAdapter.onPersonListInteraction {
 
     private RecyclerView rvPersonList;
     List<Person> personList;
@@ -47,8 +50,15 @@ public class PersonList extends AppCompatActivity implements PersonListContract.
     public void setupRecyclerView() {
 
         rvPersonList = findViewById(R.id.rvPersonList);
-        adapter = new PersonListAdapter(personList);
+        adapter = new PersonListAdapter(this, personList);
         rvPersonList.setLayoutManager(new LinearLayoutManager(this));
         rvPersonList.setAdapter(adapter);
+    }
+
+    @Override
+    public void onPersonClicked(Person person) {
+        Intent intent = new Intent(getApplicationContext(), PersonDetail.class);
+        intent.putExtra(Constants.Extras.PERSON, person);
+        startActivity(intent);
     }
 }
