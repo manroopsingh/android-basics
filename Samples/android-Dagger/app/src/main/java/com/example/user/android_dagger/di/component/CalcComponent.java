@@ -18,7 +18,7 @@ public interface CalcComponent {
 
 
     //Using the @Inject in the MainActivity for Multiplication class instance
-    void injectMultiplication(MainActivity mainActivity);
+    void inject(MainActivity mainActivity);
 
     //returns the Calculation class instance using the @Inject in its constructor
     //and injecting the Addition class as a dependency in Calculation class

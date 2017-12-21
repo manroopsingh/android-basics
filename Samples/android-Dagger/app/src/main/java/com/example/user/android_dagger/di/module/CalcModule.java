@@ -26,20 +26,20 @@ public class CalcModule {
 
     //providing multiplication instance for Calculation constructor injection
 
-    @Provides
-    @Singleton
-    Multiplication getMultiplication(){
-        return new Multiplication();
-
-    }
-
-
-    @Provides
-    @Singleton
-    Addition getAddtion() {
-        return new Addition();
-
-    }
+//    @Provides
+//    @Singleton
+//    Multiplication provideMultiplication(){
+//        return new Multiplication();
+//
+//    }
+//
+//
+//    @Provides
+//    @Singleton
+//    Addition provideAddtion() {
+//        return new Addition();
+//
+//    }
 
 
 
