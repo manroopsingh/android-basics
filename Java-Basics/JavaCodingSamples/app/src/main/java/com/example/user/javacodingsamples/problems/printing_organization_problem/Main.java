@@ -1,4 +1,4 @@
-package com.example.user.javacodingsamples;
+package com.example.user.javacodingsamples.problems.printing_organization_problem;
 
 import java.util.ArrayList;
 import java.util.HashMap;

@@ -1,6 +1,4 @@
-package com.example.user.javacodingsamples;
-
-import android.widget.TextView;
+package com.example.user.javacodingsamples.problems.printing_organization_problem;
 
 import java.util.ArrayList;
 import java.util.List;
