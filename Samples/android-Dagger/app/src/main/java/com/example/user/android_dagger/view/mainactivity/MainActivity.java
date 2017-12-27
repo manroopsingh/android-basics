@@ -8,63 +8,69 @@ import android.widget.TextView;
 
 import com.example.user.android_dagger.MyApplication;
 import com.example.user.android_dagger.R;
-import com.example.user.android_dagger.view.secondactivity.SecondActivity;
 import com.example.user.android_dagger.User;
+import com.example.user.android_dagger.calculation.Calculation;
+import com.example.user.android_dagger.datasource.local.LocalDataSource;
+import com.example.user.android_dagger.datasource.remote.RemoteDataSource;
 import com.example.user.android_dagger.di.module.MainActivityModule;
+import com.example.user.android_dagger.view.secondactivity.SecondActivity;
+
+import javax.inject.Inject;
 
 public class MainActivity extends AppCompatActivity {
 
     private static final String TAG = "MainActivityTag";
 
-//    @Inject
-//    Multiplication multiplication;
-
-    //make another instance of the multiplication class to test singleton scope
-//    @Inject
-//    Multiplication multiplication1;
-
     TextView textView;
+
+    //    inject dependencies from app component
+    @Inject
+    RemoteDataSource remoteDataSource;
+    @Inject
+    LocalDataSource localDataSource;
+
+    //    inject dependency from calculation component
+    @Inject
+    Calculation calculation;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        textView = (TextView) findViewById(R.id.textview);
+        textView = findViewById(R.id.textview);
 
-        MyApplication.get(this)
-                .createUserComponent(new User("Manroop", 23, "singh@manroop.com"))
-                .plus(new MainActivityModule(this))
-                .inject(this);
+        setupDaggerUserComponent();
+
+//        test injected dependencies from app component
+        remoteDataSource.getDataFromServer();
+        localDataSource.queryData("Select * from Table name");
 
 
-//        //build the component interface with the object graph and use the methods
-//        CalcComponent calcComponent = DaggerCalcComponent.builder().build();
-//
-//
-//        //For using the multiplication class, pass this class reference to
-//        //map the dependency
-//        calcComponent.injectMultiplication(this);
-//
-//        //using the Multiplication class
-//        Log.d(TAG, "onCreate: " + multiplication.multiply(4, 4));
-//
-//        //Using the Calculation class with Addtion as dependency
-//        Log.d(TAG, "onCreate: " + calcComponent.getCalculation().add(2, 3));
-//
-//
-//        //setting a member field of the injected instance
-//        multiplication.setSomeValue("someValue");
-//
-//        //getting the value of same member field to test the scope
-//        Log.d(TAG, "onCreate: " + multiplication1.getSomeValue());
-//
-//
+        setupDaggerCalcComponent();
+
+//        test calculation class
+        Log.d(TAG, "onCreate: " + calculation.multiply(3, 5));
+        Log.d(TAG, "onCreate: "+ calculation.add(5, 6));
+
+
+//        test @User scope
         Log.d(TAG, "onCreate: Going to second activity to test scopes");
         Intent intent = new Intent(this, SecondActivity.class);
         startActivity(intent);
     }
 
+    private void setupDaggerCalcComponent() {
+        MyApplication.get(this).createCalcComponent().inject(this);
+    }
+
+    private void setupDaggerUserComponent() {
+        MyApplication.get(this)
+                .createUserComponent(new User("Manroop", 23, "singh@manroop.com"))
+                .plus(new MainActivityModule(this))
+                .inject(this);
+    }
 
 
 }

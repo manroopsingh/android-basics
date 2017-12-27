@@ -9,11 +9,8 @@ import javax.inject.Inject;
 public class Calculation {
 
 
-
-
     private Addition addition;
     private Multiplication multiplication;
-
 
 
     @Inject
