@@ -1,4 +1,4 @@
-package com.example.user.javacodingsamples.problems.printing_organization_problem;
+package com.example.user.javacodingsamples.printing_organization_problem;
 
 /**
  * Created by singh on 12/7/17.

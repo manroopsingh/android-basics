@@ -1,4 +1,4 @@
-package com.example.user.javacodingsamples.problems.printing_organization_problem;
+package com.example.user.javacodingsamples.printing_organization_problem;
 
 import java.util.List;
 
