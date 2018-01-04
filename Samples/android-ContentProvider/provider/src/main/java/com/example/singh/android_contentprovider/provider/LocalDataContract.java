@@ -11,6 +11,6 @@ public final class LocalDataContract {
         public static final String NAME = "name";
         public static final String AGE = "age";
         public static final String GENDER = "gender";
-        
+
     }
 }
