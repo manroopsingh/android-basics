@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+
+    <TextView
+        android:id="@+id/facebookView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/icon_facebook"
+        android:drawableStart="@drawable/icon_facebook"/>
+
+    <TextView
+        android:id="@+id/instagramView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/icon_instagram"
+        android:drawableStart="@drawable/icon_instagram"/>
+
+    <TextView
+        android:id="@+id/twitterView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/icon_twitter"
+        android:drawableStart="@drawable/icon_twitter"/>
+
+</merge>
