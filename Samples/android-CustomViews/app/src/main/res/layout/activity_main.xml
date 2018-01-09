@@ -5,22 +5,25 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:gravity="center"
     android:orientation="vertical"
     tools:context="com.example.user.android_customviews.MainActivity">
 
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
 
-    <com.example.user.android_customviews.CustomCircleView
+    <com.example.user.android_customviews.customcomponents.CustomCircleView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:borderColor="@color/colorAccent"
-        app:radius="600"/>
+        app:borderColor="@android:color/holo_red_dark"
+        app:fillColor="@android:color/holo_orange_light"
+        app:radius="200"/>
 
+    <com.example.user.android_customviews.customcomponents.CustomCircleWithTextView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:text="Sample text"/>
 
-    <Button
-        android:layout_width="match_parent"
+    <com.example.user.android_customviews.customcomponents.SocialRatingView
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
 
 </LinearLayout>
