@@ -6,6 +6,15 @@ package com.example.singh.android_contentprovider.model;
 
 public class People {
 
+    @Override
+    public String toString() {
+        return "People{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", gender='" + gender + '\'' +
+                ", age='" + age + '\'' +
+                '}';
+    }
 
     int id;
     String name;

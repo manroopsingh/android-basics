@@ -5,11 +5,14 @@ import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
+import android.util.Log;
 
 import com.example.singh.android_contentprovider.model.People;
 
+import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
 
 /**
  * Author: singh on: 02-Jan-18.
@@ -22,6 +25,7 @@ public class LocalDataSource extends SQLiteOpenHelper {
     private static LocalDataSource instance = null;
     public static final int ALL_PEOPLE = 0;
     public static final int DEFAULT_PEOPLE = 10;
+    Context context;
 
     //    table ddl statements
     public static final String CREATE_TABLE =
@@ -34,6 +38,7 @@ public class LocalDataSource extends SQLiteOpenHelper {
 
     private LocalDataSource(Context context) {
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
+        this.context = context;
 
     }
 
@@ -69,6 +74,8 @@ public class LocalDataSource extends SQLiteOpenHelper {
 
         long rowId = database.insert(LocalDataContract.People.TABLE_NAME, null, contentValues);
 
+        database.close();
+        Log.d("MAINDB", "insert: " + rowId);
         return rowId;
     }
 
@@ -78,7 +85,7 @@ public class LocalDataSource extends SQLiteOpenHelper {
 
     }
 
-    public List<People> retreive(int id) {
+    public List<People> retrieve(int id) {
         List<People> peopleList = new ArrayList<>();
 
         SQLiteDatabase database = getWritableDatabase();
@@ -86,12 +93,11 @@ public class LocalDataSource extends SQLiteOpenHelper {
         String rawQuery;
         Cursor cursor;
 
-        if (id == 0) {
+        if (id != 0) {
             rawQuery = "SELECT * FROM " +
                     LocalDataContract.People.TABLE_NAME + " WHERE "
-                    + LocalDataContract.People._ID + "=?";
+                    + LocalDataContract.People._ID + "= ?";
 
-            String selection = "WHERE " + LocalDataContract.People._ID + "=";
             String[] selectionArgs = new String[]{String.valueOf(id)};
             cursor = database.rawQuery(rawQuery, selectionArgs);
 
@@ -114,13 +120,44 @@ public class LocalDataSource extends SQLiteOpenHelper {
             } while (cursor.moveToNext());
         }
 
+        database.close();
 
         return peopleList;
     }
 
     public void createDatabase(int peopleCount) {
 
-        
+        for (int i = 0; i < peopleCount; i++) {
+
+            insert(getRandonPeople());
+        }
+    }
+
+    private People getRandonPeople() {
+
+        String[] FIRSTNAME_DICTIONARY = new String[]{"John", "Alex", "Matt", "Henry", "Jake", "Melinda", "Colleen", "Jennifer"};
+        String[] LASTNAME_DICTIONARY = new String[]{"Smith", "Hanson", "Hancock", "Aniston", "Davidson", "Lee", "Singh"};
+        String[] GENDER_DICTIONARY = new String[]{"Male", "Female"};
+        String[] AGE_DICTIONARY = new String[]{"34", "54", "22", "25", "56", "44", "12"};
+
+        String name = FIRSTNAME_DICTIONARY[new Random().nextInt(FIRSTNAME_DICTIONARY.length)] + " " +
+                LASTNAME_DICTIONARY[new Random().nextInt(LASTNAME_DICTIONARY.length)];
+        String age = AGE_DICTIONARY[new Random().nextInt(AGE_DICTIONARY.length)];
+        String gender = GENDER_DICTIONARY[new Random().nextInt(GENDER_DICTIONARY.length)];
+
+        return new People(name, gender, age);
 
     }
+
+    public boolean checkDataExists() {
+
+        File database = context.getDatabasePath(DATABASE_NAME);
+
+        String query = "SELECT * FROM " + LocalDataContract.People.TABLE_NAME;
+        SQLiteDatabase sqLiteDatabase = getWritableDatabase();
+        Cursor cursor = sqLiteDatabase.rawQuery(query, null);
+
+        return cursor.getCount() > 0 && database.exists();
+    }
+
 }
