@@ -20,7 +20,7 @@ public class LocalDataSource extends SQLiteOpenHelper {
     private static final String DATABASE_NAME = "people.db";
     private static final int DATABASE_VERSION = 1;
     private static LocalDataSource instance = null;
-    public static final int DEFAULT_ID = 0;
+    public static final int ALL_PEOPLE = 0;
     public static final int DEFAULT_PEOPLE = 10;
 
     //    table ddl statements
@@ -86,8 +86,6 @@ public class LocalDataSource extends SQLiteOpenHelper {
         String rawQuery;
         Cursor cursor;
 
-        rawQuery = "SELECT * FROM";
-
         if (id == 0) {
             rawQuery = "SELECT * FROM " +
                     LocalDataContract.People.TABLE_NAME + " WHERE "
@@ -95,18 +93,26 @@ public class LocalDataSource extends SQLiteOpenHelper {
 
             String selection = "WHERE " + LocalDataContract.People._ID + "=";
             String[] selectionArgs = new String[]{String.valueOf(id)};
-
             cursor = database.rawQuery(rawQuery, selectionArgs);
 
         } else {
             rawQuery = "SELECT * FROM " + LocalDataContract.People.TABLE_NAME;
-
-//            cursor = database.rawQuery(rawQuery,)
-
+            cursor = database.rawQuery(rawQuery, null);
 
         }
 
-        //create cursor to get person list
+        if (cursor.moveToFirst()) {
+            do {
+                People people = new People(
+                        cursor.getInt(cursor.getColumnIndex(LocalDataContract.People._ID)),
+                        cursor.getString(cursor.getColumnIndex(LocalDataContract.People.NAME)),
+                        cursor.getString(cursor.getColumnIndex(LocalDataContract.People.GENDER)),
+                        cursor.getString(cursor.getColumnIndex(LocalDataContract.People.AGE)));
+
+                peopleList.add(people);
+
+            } while (cursor.moveToNext());
+        }
 
 
         return peopleList;
@@ -114,6 +120,7 @@ public class LocalDataSource extends SQLiteOpenHelper {
 
     public void createDatabase(int peopleCount) {
 
+        
 
     }
 }

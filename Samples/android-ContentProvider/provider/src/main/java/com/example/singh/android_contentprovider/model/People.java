@@ -7,12 +7,19 @@ package com.example.singh.android_contentprovider.model;
 public class People {
 
 
-    String id;
+    int id;
     String name;
     String gender;
     String age;
 
     public People(String name, String gender, String age) {
+        this.name = name;
+        this.gender = gender;
+        this.age = age;
+    }
+
+    public People(int id, String name, String gender, String age) {
+        this.id = id;
         this.name = name;
         this.gender = gender;
         this.age = age;
@@ -42,11 +49,11 @@ public class People {
         this.age = age;
     }
 
-    public String getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(int id) {
         this.id = id;
     }
 }
