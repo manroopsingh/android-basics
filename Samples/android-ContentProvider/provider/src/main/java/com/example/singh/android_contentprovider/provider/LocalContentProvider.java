@@ -16,7 +16,7 @@ public class LocalContentProvider extends ContentProvider {
     @Override
     public boolean onCreate() {
         return false;
-    it agit}
+    }
 
     @Nullable
     @Override
