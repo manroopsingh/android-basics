@@ -23,10 +23,13 @@ public class MainActivity extends AppCompatActivity {
             localDataSource.createDatabase(LocalDataSource.DEFAULT_PEOPLE);
         }
 
+
+
         for (People p :
                 localDataSource.retrieve(LocalDataSource.ALL_PEOPLE)) {
 
         }
+
 
     }
 }

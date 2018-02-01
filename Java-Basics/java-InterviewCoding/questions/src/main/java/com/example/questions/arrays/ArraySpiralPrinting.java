@@ -1,4 +1,4 @@
-package com.example.questions;
+package com.example.questions.arrays;
 
 public class ArraySpiralPrinting {
 /*
@@ -34,10 +34,13 @@ public class ArraySpiralPrinting {
     }
 
 
+    public static void print(int element) {
+        System.out.print("\t" + element);
+    }
+
     public static void printSpiral(int[][] arr) {
         int totalRows = arr.length;
         int totalColumns = arr[0].length;
-
         int currentRow = 0;
         int currentColumn = 0;
         System.out.println("Rows:" + totalRows);
@@ -82,10 +85,6 @@ public class ArraySpiralPrinting {
 
         }
 
-    }
-
-    public static void print(int element) {
-        System.out.print("\t" + element);
     }
 
 
