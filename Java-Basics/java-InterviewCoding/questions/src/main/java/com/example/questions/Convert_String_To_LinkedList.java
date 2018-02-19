@@ -6,10 +6,17 @@ package com.example.questions;
 
 public class Convert_String_To_LinkedList {
 
+    /*
+    Create a function to convert a string to
+    a linked list of chars, do not use LinkedList
+    from collections.
+
+    */
+
     public static void main(String[] args) {
 
 
-        String string = "asdfasdf";
+        String string = "Philadelphia";
         char[] strings = string.toCharArray();
 
         LinkedString linkedString = new LinkedString();
@@ -39,8 +46,6 @@ public class Convert_String_To_LinkedList {
         Node tail = null;
         int length = 0;
 
-
-
         //adding a node to the linked list
         public void add(Node currentNode) {
 
@@ -49,19 +54,14 @@ public class Convert_String_To_LinkedList {
                 head = currentNode;
                 tail = currentNode;
 
-
             } else {
-
 
                 tail.next = currentNode;
                 tail = tail.next;
                 length++;
 
             }
-
-
         }
-
         public int size(){
             return length;
         }
