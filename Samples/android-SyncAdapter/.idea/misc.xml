@@ -317,7 +317,11 @@
       </profile-state>
     </entry>
   </component>
+<<<<<<< HEAD
   <component name="ProjectRootManager" version="2" languageLevel="JDK_1_7" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+=======
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8 (1)" project-jdk-type="JavaSDK">
+>>>>>>> 219fc527434469b5cb81c981a5ec281009819237
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">
