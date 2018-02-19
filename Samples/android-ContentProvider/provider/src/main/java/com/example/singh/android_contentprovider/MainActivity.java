@@ -24,7 +24,6 @@ public class MainActivity extends AppCompatActivity {
         }
 
 
-
         for (People p :
                 localDataSource.retrieve(LocalDataSource.ALL_PEOPLE)) {
 

@@ -3,7 +3,9 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/android-SyncAdapter.iml" filepath="$PROJECT_DIR$/android-SyncAdapter.iml" />
+      <module fileurl="file://C:\Users\singh\AndroidStudioProjects\android-basics\Samples\android-SyncAdapter\android-SyncAdapter.iml" filepath="C:\Users\singh\AndroidStudioProjects\android-basics\Samples\android-SyncAdapter\android-SyncAdapter.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://C:\Users\singh\AndroidStudioProjects\android-basics\Samples\android-SyncAdapter\app\app.iml" filepath="C:\Users\singh\AndroidStudioProjects\android-basics\Samples\android-SyncAdapter\app\app.iml" />
     </modules>
   </component>
 </project>
