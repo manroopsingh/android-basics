@@ -27,6 +27,11 @@ public class Main {
 
         System.out.println(linkedString.size());
 
+        linkedString.remove(2);
+        linkedString.remove(0);
+        System.out.println(linkedString.size());
+
+
     }
 
 

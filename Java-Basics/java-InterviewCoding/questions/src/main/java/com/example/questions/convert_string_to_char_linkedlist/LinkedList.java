@@ -10,8 +10,8 @@ public class LinkedList {
     Node tail = null;
     int length = 0;
     int counter = 0;
-    public static final int ITERATE_UP = 1;
-    public static final int ITERATE_DOWN = 0;
+    public static final int ITERATE_UP = 0;
+    public static final int ITERATE_DOWN = 1;
 
     //adding a node to the linked list
     public void add(Node currentNode) {
@@ -32,26 +32,50 @@ public class LinkedList {
 
     }
 
-    public void remove(int index) {
+    public int remove(int index) {
 
         int direction = 0;
+        if (index > length) return 0;
 
-        if(!(index<length)) {
-            direction = ((length - index > length / 2) ? 0 : 1);
+
+//        used for doubly linked list
+//        if((index>length/2)) {
+//            direction = 1;
+//        }
+
+        //get the head in temp
+        Node temp = head;
+
+        //change head
+        if (index == 0) {
+            head = temp.next;
         }
 
 
         switch (direction) {
 
+            //you can iterate down for a double linked list
             case ITERATE_DOWN:
+                counter = length - 1;
+                while (counter > index) {
+
+                }
+
                 break;
 
             case ITERATE_UP:
+                while (counter < index-1) {
+                    temp = temp.next;
+                    counter++;
+                }
+                Node next = temp.next.next;
+                temp.next = next;
                 break;
 
         }
 
-
+        length--;
+        return 1;
     }
 
     public int size(){
