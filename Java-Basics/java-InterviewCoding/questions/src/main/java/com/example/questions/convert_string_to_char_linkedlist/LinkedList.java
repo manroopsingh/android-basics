@@ -9,7 +9,9 @@ public class LinkedList {
     Node head = null;
     Node tail = null;
     int length = 0;
-    int counter;
+    int counter = 0;
+    public static final int ITERATE_UP = 1;
+    public static final int ITERATE_DOWN = 0;
 
     //adding a node to the linked list
     public void add(Node currentNode) {
@@ -24,12 +26,30 @@ public class LinkedList {
         else {
             tail.next = currentNode;
             tail = tail.next;
-            length++;
+
         }
+        length++;
+
     }
 
-    public void remote(int index) {
+    public void remove(int index) {
 
+        int direction = 0;
+
+        if(!(index<length)) {
+            direction = ((length - index > length / 2) ? 0 : 1);
+        }
+
+
+        switch (direction) {
+
+            case ITERATE_DOWN:
+                break;
+
+            case ITERATE_UP:
+                break;
+
+        }
 
 
     }
