@@ -47,17 +47,19 @@ public class ArraySpiralPrinting {
         System.out.println("Columns:" + totalColumns);
 
         int i;
+
+        //condition if the currentRow and currentCol are greater/less than total as we print
         while (currentRow < totalRows && currentColumn < totalColumns) {
 
             //iterate through starting row ( left to right )
             for (i = currentColumn; i < totalColumns; i++) {
-                print(arr[currentColumn][i]);
+                print(arr[currentRow][i]);
             }
             currentRow++;
 
             //iterate through remaining last column ( top to bottom)
             for (i = currentRow; i < totalRows; i++) {
-                print(arr[i][totalRows - 1]);
+                print(arr[i][totalColumns - 1]);
             }
             totalColumns--;
 
@@ -81,7 +83,6 @@ public class ArraySpiralPrinting {
                 }
                 currentColumn++;
             }
-
 
         }
 

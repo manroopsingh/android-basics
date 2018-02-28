@@ -27,7 +27,7 @@ public class Recursive_Function_Add_IntegerList {
         if (integers.size() == 0) {
             return 0;
         }
-        
+
         List<Integer> newList = integers.subList(0, integers.size() - 1);
         return integers.get(integers.size()-1) + recursiveSum(newList);
     }
