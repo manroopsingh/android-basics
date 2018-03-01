@@ -6,6 +6,9 @@ package com.example.questions;
 
 public class Print_multiplication_table {
 
+    /*
+    Print a 12 X 12 multiplication table without using tabs
+    */
     public static void main(String[] args) {
 
         printMatrix();
