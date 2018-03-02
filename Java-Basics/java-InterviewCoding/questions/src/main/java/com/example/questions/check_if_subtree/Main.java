@@ -16,8 +16,6 @@ return -1 if not
 public class Main {
 
 
-
-
     public static void main(String[] args) {
 
 
@@ -33,16 +31,22 @@ public class Main {
             return true;
         }
 
-        if (areSame(root1, root2)) {
-            return isSubTree(root1.left, root2.left) && isSubTree(root1.right, root2.right);
-        } else return false;
+        if (areSame(root1, root2))
+            return true;
+
+        return isSubTree(root1.left, root2) || isSubTree(root1.right, root2);
 
     }
 
     public static boolean areSame(TNode node1, TNode node2) {
 
 
-        return false;
+        if (node1 == null && node2 == null) return true;
+        if (node1 == null || node2 == null) return false;
+
+        return (node1.data == node2.data ||
+                areSame(node1.left, node2.left) ||
+                areSame(node1.left, node2.left));
     }
 
 
