@@ -30,6 +30,7 @@ public class Clubbing_Anagrams {
 
         Integer count;
 
+
         for (Character ch : s.toCharArray()) {
             count = charMap.get(ch);
             if (count != null) {
@@ -57,16 +58,16 @@ public class Clubbing_Anagrams {
         
         for (String s : rawList) {
 
-            HashSet<String> stringList = new HashSet<>();
+            HashSet<String> anagramsSet = new HashSet<>();
 
-            stringList.add(s);
+            anagramsSet.add(s);
             for (String s1 : rawList) {
 
                 if (isAnagram(s, s1)) {
-                    stringList.add(s1);
+                    anagramsSet.add(s1);
                 }
             }
-            clubbedAnagrams.add(stringList);
+            clubbedAnagrams.add(anagramsSet);
         }
 
         System.out.println(clubbedAnagrams);

@@ -9,13 +9,18 @@ import java.util.Arrays;
 public class CustomArrayList<T> {
 
 
+    T element;
     int counter=0;
     Object[] elements;
 
     public void add(T t) {
 
+        //type safety
+        element = t;
+        
+        //creating the size to be default
         if (elements == null) {
-            elements = new Object[2];//creating the size to be default
+            elements = new Object[2];
         }
 
         if (counter == elements.length) {
