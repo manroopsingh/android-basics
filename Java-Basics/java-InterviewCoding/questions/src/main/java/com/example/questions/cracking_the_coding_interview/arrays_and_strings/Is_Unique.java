@@ -1,5 +1,6 @@
 package com.example.questions.cracking_the_coding_interview.arrays_and_strings;
 
+
 /**
  * Created by singh on 3/4/18.
  */
@@ -33,6 +34,7 @@ public class Is_Unique {
             if(charCount[i]>1) return false;
         }
 
+
         return true;
 
     }
@@ -40,6 +42,8 @@ public class Is_Unique {
     /*This function have a complexity of O(n)
     */
     private static boolean isUniqueOptimized(String inputString) {
+
+
 
         int stringSize = inputString.length();
 
@@ -54,6 +58,7 @@ public class Is_Unique {
             char_set[value] = true;
         }
         return true;
+
 
     }
 

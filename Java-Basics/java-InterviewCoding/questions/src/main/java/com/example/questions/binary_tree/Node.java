@@ -1,4 +1,4 @@
-package com.example.questions.print_binary_tree;
+package com.example.questions.binary_tree;
 
 
 /**

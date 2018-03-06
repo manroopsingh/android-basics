@@ -1,4 +1,4 @@
-package com.example.questions.print_binary_tree;
+package com.example.questions.binary_tree;
 
 /**
  * Created by singh on 3/3/18.
@@ -7,8 +7,6 @@ package com.example.questions.print_binary_tree;
 public class BinaryTree {
 
     Node root;
-    int counter = 0;
-
 
     public static final String POST_ORDER = "post";
     public static final String PRE_ORDER = "pre";

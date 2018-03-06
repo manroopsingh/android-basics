@@ -1,10 +1,10 @@
-package com.example.questions.print_binary_tree;
+package com.example.questions.binary_tree;
 
 /**
  * Created by singh on 2/13/18.
  */
 
-public class Printing_Binary_Tree {
+public class Main {
 
     public static void main(String[] args) {
 
@@ -18,6 +18,9 @@ public class Printing_Binary_Tree {
 
         System.out.println(binaryTree);
     }
+
+
+
 
 
 }
