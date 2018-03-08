@@ -1,6 +1,6 @@
-package com.example.questions.arrays;
+package com.example.questions;
 
-public class ArraySpiralPrinting {
+public class Array_spiral_printing {
 /*
     Given a 2D array, print it in spiral form. See the following examples.
 

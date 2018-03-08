@@ -13,7 +13,7 @@ public class Binary_search {
         int[] ints = new int[]{3, 5, 2, 6, 8, 9};
 
         Arrays.sort(ints);
-        System.out.println(findInteger(ints, 0,ints.length-1, 2));
+        System.out.println(findInteger(ints, 0,ints.length-1, 3));
         //System.out.println(findInteger(randomInts(20), 6));
 
     }
@@ -21,10 +21,11 @@ public class Binary_search {
     private static int findInteger(int[] integers, int start, int end, int findMe) {
 
 
+
         if (end >= start) {
 
 
-            int midIndex = start + (end - 1 )/ 2;
+            int midIndex = start + (end - 1)/ 2;
 
 
             if (integers[midIndex] == findMe) {

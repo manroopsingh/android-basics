@@ -1,5 +1,6 @@
 package com.example.questions.binary_tree;
 
+
 /**
  * Created by singh on 3/3/18.
  */
@@ -15,6 +16,8 @@ public class BinaryTree {
 
     public BinaryTree(String order) {
         this.order = order;
+
+
 
     }
 

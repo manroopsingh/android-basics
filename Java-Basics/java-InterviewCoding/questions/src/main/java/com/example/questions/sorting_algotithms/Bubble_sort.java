@@ -1,10 +1,10 @@
-package com.example.questions;
+package com.example.questions.sorting_algotithms;
 
 /**
  * Created by singh on 2/13/18.
  */
 
-public class BubbleSort {
+public class Bubble_sort {
 
     public static void main(String[] args) {
 
