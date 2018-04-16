@@ -1,4 +1,4 @@
-package com.example.questions.multithreading;
+package com.example.questions.multithreading.increment_static_counter_with_threads;
 
 public class Thread_ordering {
 

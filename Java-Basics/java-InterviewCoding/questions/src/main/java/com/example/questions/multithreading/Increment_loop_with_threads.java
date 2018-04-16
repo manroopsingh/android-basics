@@ -1,6 +1,6 @@
 package com.example.questions.multithreading;
 
-public class MyClass {
+public class Increment_loop_with_threads {
 
     private static Object lock = new Object();
 
