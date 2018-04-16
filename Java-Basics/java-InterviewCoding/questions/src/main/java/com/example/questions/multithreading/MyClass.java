@@ -4,7 +4,7 @@ public class MyClass {
 
     private static Object lock = new Object();
 
-    public static void main(String args[]){
+    public static void main(String args[]) throws InterruptedException {
 
         Runnable runnable1 = new Runnable() {
             @Override
@@ -47,6 +47,8 @@ public class MyClass {
         System.out.println("Thread Start: ");
         thread1.start();
         thread2.start();
+
+        thread1.join();
     }
 
 }
