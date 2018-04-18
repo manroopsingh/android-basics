@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="MarkdownProjectSettings">
-    <PreviewSettings allowBrowsingInPreview="false" highlightFadeOut="5" highlightOnTyping="true" highlightPreviewType="NONE" maxImageWidth="0" showGitHubPageIfSynced="false" showSearchHighlightsInPreview="true" showSelectionInPreview="true" splitEditorLayout="SPLIT" splitEditorPreview="PREVIEW" synchronizePreviewPosition="true" synchronizeSourcePosition="true" useGrayscaleRendering="false" verticallyAlignSourceAndPreviewSyncPosition="true" zoomFactor="1.0">
+    <PreviewSettings splitEditorLayout="SPLIT" splitEditorPreview="PREVIEW" useGrayscaleRendering="false" zoomFactor="1.0" maxImageWidth="0" showGitHubPageIfSynced="false" allowBrowsingInPreview="false" synchronizePreviewPosition="true" highlightPreviewType="NONE" highlightFadeOut="5" highlightOnTyping="true" synchronizeSourcePosition="true" verticallyAlignSourceAndPreviewSyncPosition="true" showSearchHighlightsInPreview="true" showSelectionInPreview="true">
       <PanelProvider>
         <provider providerId="com.vladsch.idea.multimarkdown.editor.swing.html.panel" providerName="Default - Swing" />
       </PanelProvider>
@@ -48,7 +48,7 @@
         <option name="SIM_TOC_BLANK_LINE_SPACER" value="true" />
       </ParserOptions>
     </ParserSettings>
-    <HtmlSettings addPageHeader="true" bodyBottomEnabled="false" bodyTopEnabled="false" embedUrlContent="false" headerBottomEnabled="false" headerTopEnabled="false">
+    <HtmlSettings headerTopEnabled="false" headerBottomEnabled="false" bodyTopEnabled="false" bodyBottomEnabled="false" embedUrlContent="false" addPageHeader="true">
       <GeneratorProvider>
         <provider providerId="com.vladsch.idea.multimarkdown.editor.swing.html.generator" providerName="Default Swing HTML Generator" />
       </GeneratorProvider>
@@ -57,14 +57,14 @@
       <bodyTop />
       <bodyBottom />
     </HtmlSettings>
-    <CssSettings cssUri="" isCssTextEnabled="false" isCssUriEnabled="false" isDynamicPageWidth="true" previewScheme="UI_SCHEME">
+    <CssSettings previewScheme="UI_SCHEME" cssUri="" isCssUriEnabled="false" isCssTextEnabled="false" isDynamicPageWidth="true">
       <StylesheetProvider>
         <provider providerId="com.vladsch.idea.multimarkdown.editor.swing.html.css" providerName="Default Swing Stylesheet" />
       </StylesheetProvider>
       <ScriptProviders />
       <cssText />
     </CssSettings>
-    <HtmlExportSettings copyLinkedImages="false" cssDir="" exportOnSettingsChange="true" imageDir="" imageUniquifyType="0" linkToExportedHtml="true" noCssNoScripts="false" parentDir="$ProjectFileDir$" plainHtml="false" regenerateOnProjectOpen="false" scriptDir="" targetDir="$ProjectFileDir$" targetExt="" updateOnSave="false" useTargetExt="false" />
+    <HtmlExportSettings updateOnSave="false" parentDir="$ProjectFileDir$" targetDir="$ProjectFileDir$" cssDir="" scriptDir="" plainHtml="false" imageDir="" copyLinkedImages="false" imageUniquifyType="0" targetExt="" useTargetExt="false" noCssNoScripts="false" linkToExportedHtml="true" exportOnSettingsChange="true" regenerateOnProjectOpen="false" />
     <LinkMapSettings>
       <textMaps />
     </LinkMapSettings>
@@ -74,11 +74,12 @@
     <option name="myDefaultNotNull" value="android.support.annotation.NonNull" />
     <option name="myNullables">
       <value>
-        <list size="4">
+        <list size="5">
           <item index="0" class="java.lang.String" itemvalue="org.jetbrains.annotations.Nullable" />
           <item index="1" class="java.lang.String" itemvalue="javax.annotation.Nullable" />
-          <item index="2" class="java.lang.String" itemvalue="edu.umd.cs.findbugs.annotations.Nullable" />
-          <item index="3" class="java.lang.String" itemvalue="android.support.annotation.Nullable" />
+          <item index="2" class="java.lang.String" itemvalue="javax.annotation.CheckForNull" />
+          <item index="3" class="java.lang.String" itemvalue="edu.umd.cs.findbugs.annotations.Nullable" />
+          <item index="4" class="java.lang.String" itemvalue="android.support.annotation.Nullable" />
         </list>
       </value>
     </option>
