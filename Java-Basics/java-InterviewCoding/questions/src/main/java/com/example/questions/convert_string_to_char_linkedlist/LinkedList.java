@@ -64,7 +64,7 @@ public class LinkedList {
                 break;
 
             case ITERATE_UP:
-                while (counter < index-1) {
+                while (counter < index - 1) {
                     temp = temp.next;
                     counter++;
                 }
@@ -78,7 +78,17 @@ public class LinkedList {
         return 1;
     }
 
-    public int size(){
+    public String print() {
+        String result = null;
+        Node temp = head;
+        while (temp != null) {
+            result += temp.data + " ,";
+            temp = temp.next;
+        }
+        return result;
+    }
+
+    public int size() {
         return length;
     }
 

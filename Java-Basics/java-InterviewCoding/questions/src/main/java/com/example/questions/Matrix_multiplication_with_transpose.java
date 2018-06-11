@@ -1,5 +1,7 @@
 package com.example.questions;
 
+import java.util.ListIterator;
+
 /**
  * Created by singh on 2/28/18.
  */
@@ -82,7 +84,10 @@ public class Matrix_multiplication_with_transpose {
             System.out.println("\n");
 
         }
+
     }
+
+
 
 
 }
