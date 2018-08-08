@@ -10,10 +10,10 @@ public class ExpressionEvaluator {
         // System.out.println(convert("3 5 +"));//3 + 5 = 8
         convert("3 5 + 7 *");//56
 
-        // System.out.println(calculate("3 5 + 7 *"));// (3 + 5) x 7 = 56
-        // System.out.println(calculate("3 5 - 7 8 / *"));
-        // System.out.println(calculate("3 5 6 + *"));
-        // System.out.println(calculate("3 5 + 6 *"));
+         System.out.println(calculate("3 5 + 7 *"));// (3 + 5) x 7 = 56
+         System.out.println(calculate("3 5 - 7 8 / *"));
+         System.out.println(calculate("3 5 6 + *"));
+         System.out.println(calculate("3 5 + 6 *"));
     }
 
     public static float calculate(String postfixSum) {

@@ -19,4 +19,10 @@
         android:onClick="onNotifForB"
         android:text="Send for B"/>
 
+    <com.example.myapplication.customview.CustomButton
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
 </LinearLayout>
