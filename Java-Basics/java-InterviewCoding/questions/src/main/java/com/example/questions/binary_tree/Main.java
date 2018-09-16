@@ -10,11 +10,17 @@ public class Main {
 
 
         BinaryTree binaryTree = new BinaryTree("sdf");
-        binaryTree.add(4);
+        binaryTree.add(30);
+
         binaryTree.add(5);
-        binaryTree.add(7);
-        binaryTree.add(2);
-        binaryTree.add(6);
+        binaryTree.add(10);
+        binaryTree.add(15);
+        binaryTree.add(20);
+        binaryTree.add(25);
+        binaryTree.add(30);
+        binaryTree.add(40);
+        binaryTree.add(45);
+        binaryTree.add(50);
 
         System.out.println(binaryTree);
     }
