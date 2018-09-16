@@ -7,43 +7,19 @@ package com.example.questions.binary_tree;
 
 public class BinaryTree {
 
-    Node root;
+    private Node root;
 
     public static final String POST_ORDER = "post";
     public static final String PRE_ORDER = "pre";
     public static final String IN_ORDER = "in";
-    String order;
+    private String order;
 
-    public BinaryTree(String order) {
+    BinaryTree(String order) {
         this.order = order;
-
-
-
     }
 
     public void add(int value) {
-
-
         root = addNode(root, value);
-
-
-//        switch (order) {
-//            case POST_ORDER:
-//
-//
-//                break;
-//
-//            case PRE_ORDER:
-//
-//
-//                break;
-//
-//            case IN_ORDER:
-//
-//
-//                break;
-//
-//        }
     }
 
     private Node addNode(Node current, int data) {
