@@ -33,6 +33,7 @@ public class MainActivity extends AppCompatActivity {
         MeshData[] meshArray = new MeshData[4];
         for (int i = 0; i < meshArray.length; i++) {
             meshArray[i] = NativeHelper.createObjectFromNative(i);
+            Log.d(TAG, "onCreate: "+ meshArray[i].getFacetCount());
         }
 
         //Log.d(TAG, "onCreate: Get facets array" + NativeHelper.processObjectArrayFromNative(meshArray));

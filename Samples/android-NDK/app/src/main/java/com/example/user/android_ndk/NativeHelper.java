@@ -1,7 +1,7 @@
 package com.example.user.android_ndk;
 
 /**
- * The type Native helper.
+ * The type Native helper is used for wrapping all the native functions calls.
  */
 public class NativeHelper {
 
