@@ -11,7 +11,7 @@ public class CustomArrayList<T> {
 
     private static final int DEFAULT_SIZE = 4;
     private T element;
-    private int size =0;
+    private int size = 0;
     private Object[] elements;
 
 
