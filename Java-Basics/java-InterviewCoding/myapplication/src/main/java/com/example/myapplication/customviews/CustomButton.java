@@ -1,10 +1,8 @@
-package com.example.myapplication.customview;
+package com.example.myapplication.customviews;
 
 import android.content.Context;
-import android.support.annotation.Nullable;
 import android.util.AttributeSet;
 import android.view.View;
-import android.widget.Button;
 import android.widget.Toast;
 
 public class CustomButton  extends android.support.v7.widget.AppCompatButton implements View.OnClickListener{

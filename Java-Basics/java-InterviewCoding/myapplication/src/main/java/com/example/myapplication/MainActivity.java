@@ -10,9 +10,23 @@ import android.os.Build;
 import android.support.v4.app.NotificationCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 
 public class MainActivity extends AppCompatActivity {
+
+    private static final String TAG = MainActivity.class.getSimpleName()+ "_TAG";
+    static {
+        Log.d(TAG, "static initializer: ");
+    }
+
+    {
+        Log.d(TAG, "instance initializer: ");
+    }
+
+    public MainActivity() {
+        Log.d(TAG, "MainActivity: ");
+    }
 
     private NotificationChannel channel;
 

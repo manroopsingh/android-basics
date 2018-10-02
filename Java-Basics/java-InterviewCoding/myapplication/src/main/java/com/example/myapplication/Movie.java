@@ -33,4 +33,8 @@ public class Movie implements Comparable<Movie>, Comparator<Movie> {
         return name.compareTo(o.name);
     }
 
+    @Override
+    public int compare(Movie o1, Movie o2) {
+        return 0;
+    }
 }

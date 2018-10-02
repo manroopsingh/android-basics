@@ -19,10 +19,21 @@
         android:onClick="onNotifForB"
         android:text="Send for B"/>
 
-    <com.example.myapplication.customview.CustomButton
-
+    <com.example.myapplication.customviews.CustomButton
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
+
+    <ProgressBar
+
+        android:id="@+id/progressBar"
+        style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="100dp"
+        android:max="100"
+        android:progress="60"
+        android:progressDrawable="@drawable/custom_progress_bar"/>
 
 
 </LinearLayout>

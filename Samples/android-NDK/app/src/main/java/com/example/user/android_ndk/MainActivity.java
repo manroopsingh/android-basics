@@ -12,6 +12,7 @@ public class MainActivity extends AppCompatActivity {
 
 
     private static final String TAG = MainActivity.class.getSimpleName() + "_TAG";
+    private TextView tv;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,7 +20,11 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         // Example of a call to a native method
-        TextView tv = findViewById(R.id.tvString);
+        tv = findViewById(R.id.tvString);
+        Log.d(TAG, "onCreate: TextTAg" );
+        tv.setText("Default");
+
+
 
         Log.d(TAG, "onCreate: Get String from native: " + NativeHelper.stringFromJNI());
 
@@ -42,5 +47,8 @@ public class MainActivity extends AppCompatActivity {
 
     public void onStringFromNative(View view) {
 
+        tv.setId(R.id.tvNew);
+        TextView tvNew = findViewById(R.id.tvNew);
+        tvNew.setText("New");
     }
 }
