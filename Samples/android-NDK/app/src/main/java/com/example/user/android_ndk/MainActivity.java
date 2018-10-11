@@ -51,4 +51,7 @@ public class MainActivity extends AppCompatActivity {
         TextView tvNew = findViewById(R.id.tvNew);
         tvNew.setText("New");
     }
+
+    public void onGetMemberFieldFromNative(View view) {
+    }
 }

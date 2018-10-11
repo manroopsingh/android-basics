@@ -45,6 +45,7 @@ public class NativeHelper {
     public static native MeshData createObjectFromNative(int facet);
 
 
+    // TODO: 10/4/18 Complete processing the array of objects
     public static native int processObjectArrayFromNative(MeshData[] meshArray);
 
 

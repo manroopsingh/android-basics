@@ -14,11 +14,16 @@
         android:layout_height="wrap_content"/>
 
     <Button
-        android:onClick="onStringFromNative"
-        android:text="Get string from Native"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:onClick="onStringFromNative"
+        android:text="Get string from Native"/>
 
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onGetMemberFieldFromNative"
+        android:text="Get member field from Native"/>
 
 
 </LinearLayout>
