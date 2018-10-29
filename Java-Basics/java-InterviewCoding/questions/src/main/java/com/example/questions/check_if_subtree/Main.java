@@ -21,7 +21,7 @@ public class Main {
 
     }
 
-    public static boolean isSubTree(TNode root1, TNode root2) {
+    private static boolean isSubTree(TNode root1, TNode root2) {
 
         if (root1 == null) {
             return false;
@@ -38,7 +38,7 @@ public class Main {
 
     }
 
-    public static boolean areSame(TNode node1, TNode node2) {
+    private static boolean areSame(TNode node1, TNode node2) {
 
 
         if (node1 == null && node2 == null) return true;

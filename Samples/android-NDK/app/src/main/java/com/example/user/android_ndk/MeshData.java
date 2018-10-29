@@ -1,5 +1,7 @@
 package com.example.user.android_ndk;
 
+import java.util.Arrays;
+
 public class MeshData {
 
     private int _facetCount;
@@ -22,5 +24,13 @@ public class MeshData {
     public int getFacetCount()
     {
         return _facetCount;
+    }
+
+    @Override
+    public String toString() {
+        return "MeshData{" +
+                "_facetCount=" + _facetCount +
+                ", VertexCoords=" + Arrays.toString(VertexCoords) +
+                '}';
     }
 }

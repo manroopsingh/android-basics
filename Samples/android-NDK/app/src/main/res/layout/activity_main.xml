@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -9,6 +8,9 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:layout_gravity="center"
+        android:textSize="30sp"
+        android:textColor="@color/colorAccent"
         android:id="@+id/tvString"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
@@ -22,8 +24,28 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:onClick="onCreateMeshDataFromNative"
+        android:text="Create MeshData Object from Native"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:onClick="onGetMemberFieldFromNative"
         android:text="Get member field from Native"/>
+
+    <!--invokeMemberFunctionFromNative-->
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onInvokeMemberFunctionFromNative"
+        android:text="Invoke Member Function From Native"/>
+
+    <!--CreateObjectArrayFromNative-->
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onCreateObjectArrayFromNative"
+        android:text="Create Object Array From Native"/>
 
 
 </LinearLayout>

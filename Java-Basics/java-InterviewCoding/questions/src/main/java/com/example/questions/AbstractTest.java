@@ -5,10 +5,11 @@ public  class AbstractTest {
     public static void main(String[] args) {
 
 
+
     }
 
 
-    public  class MyAbsractChild extends MyAbstractClass {
+    public class MyAbsractChild extends MyAbstractClass {
 
 
     }

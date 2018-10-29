@@ -6,7 +6,7 @@ import java.util.Arrays;
  * Created by singh on 3/6/18.
  */
 
-public class Binary_search {
+public class  Binary_search {
 
     public static void main(String[] args) {
 
