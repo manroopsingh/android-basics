@@ -11,7 +11,7 @@ public class Find_Maximum_Difference_From_Previous_Elements {
     }
 
 
-    public static int maxDifference(int[] a) {
+    private static int maxDifference(int[] a) {
 
         int size = a.length;
         int j = 1;
@@ -28,7 +28,7 @@ public class Find_Maximum_Difference_From_Previous_Elements {
 
             if (currentDifference > maxDifference)
                 maxDifference = currentDifference;
-            
+
                 i--;
 
             if (i < 0) {
