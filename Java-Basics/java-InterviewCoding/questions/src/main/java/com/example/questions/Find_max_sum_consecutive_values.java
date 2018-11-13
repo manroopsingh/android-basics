@@ -1,4 +1,4 @@
-package com.example.questions.sorting_algotithms;
+package com.example.questions;
 
 public class Find_max_sum_consecutive_values {
 

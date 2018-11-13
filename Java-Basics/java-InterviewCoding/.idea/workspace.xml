@@ -29,10 +29,10 @@
   <component name="FileEditorManager">
     <leaf>
       <file leaf-file-name="Find_max_sum_consecutive_values.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/questions/src/main/java/com/example/questions/sorting_algotithms/Find_max_sum_consecutive_values.java">
+        <entry file="file://$PROJECT_DIR$/questions/src/main/java/com/example/questions/Find_max_sum_consecutive_values.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="104">
-              <caret line="17" column="6" selection-start-line="17" selection-start-column="6" selection-end-line="17" selection-end-column="6" />
+            <state relative-caret-position="969">
+              <caret line="57" column="26" selection-start-line="57" selection-start-column="26" selection-end-line="57" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -2771,6 +2771,7 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/questions/src/main/java/com/example/questions/sorting_algotithms/Find_max_sum_consecutive_values.java" />
+        <option value="$PROJECT_DIR$/questions/src/main/java/com/example/questions/Find_max_sum_consecutive_values.java" />
       </list>
     </option>
   </component>
@@ -3061,6 +3062,13 @@
               <item name="java" type="f7eae187:NonAndroidSourceTypeNode" />
               <item name="questions" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="java-InterviewCoding" type="1abcf292:AndroidViewProjectNode" />
+              <item name="questions" type="e9137016:NonAndroidModuleNode" />
+              <item name="java" type="f7eae187:NonAndroidSourceTypeNode" />
+              <item name="questions" type="462c0819:PsiDirectoryNode" />
+              <item name="sorting_algotithms" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -3156,12 +3164,12 @@
       <option name="ACTIVITY_CLASS" value="" />
     </configuration>
     <configuration name="Find_max_sum_consecutive_values" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.example.questions.sorting_algotithms.Find_max_sum_consecutive_values" />
+      <option name="MAIN_CLASS_NAME" value="com.example.questions.Find_max_sum_consecutive_values" />
       <module name="questions" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.example.questions.sorting_algotithms.*" />
+          <option name="PATTERN" value="com.example.questions.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -3300,10 +3308,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/questions/src/main/java/com/example/questions/sorting_algotithms/Find_max_sum_consecutive_values.java">
+    <entry file="file://$PROJECT_DIR$/questions/src/main/java/com/example/questions/sorting_algotithms/Bubble_sort.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="17" column="6" selection-start-line="17" selection-start-column="6" selection-end-line="17" selection-end-column="6" />
+        <state relative-caret-position="102">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/questions/src/main/java/com/example/questions/Find_max_sum_consecutive_values.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="969">
+          <caret line="57" column="26" selection-start-line="57" selection-start-column="26" selection-end-line="57" selection-end-column="26" />
         </state>
       </provider>
     </entry>
