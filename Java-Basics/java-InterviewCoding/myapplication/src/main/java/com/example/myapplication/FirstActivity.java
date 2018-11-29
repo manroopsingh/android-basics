@@ -1,5 +1,7 @@
 package com.example.myapplication;
 
+import android.content.Context;
+import android.content.Intent;
 import android.database.CursorJoiner;
 import android.os.AsyncTask;
 import android.support.v7.app.AppCompatActivity;
@@ -18,6 +20,9 @@ public class FirstActivity extends AppCompatActivity {
         setContentView(R.layout.activity_first);
 
 
-        
+
+
     }
+
+
 }
