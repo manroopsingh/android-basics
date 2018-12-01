@@ -17,8 +17,8 @@ public class URLify {
     */
     public static void main(String[] args) {
 
-        String inputString = "John han cock    ";
-        int trueLength = 13;
+        String inputString = "John Doe  ";
+        int trueLength = 8;
 
         System.out.println(urlifyString(inputString, trueLength));
 
