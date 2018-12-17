@@ -28,11 +28,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="Replace_space_with_URLify.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Replace_space_with_URLify.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/example/questions/Replace_space_with_URLify.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="149">
-              <caret line="54" column="10" selection-start-line="54" selection-start-column="10" selection-end-line="54" selection-end-column="10" />
+            <state relative-caret-position="306">
+              <caret line="44" column="41" selection-start-line="44" selection-start-column="41" selection-end-line="44" selection-end-column="41" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Find_next_perfect_number.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/questions/Find_next_perfect_number.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="9" selection-start-line="9" selection-end-line="9" />
             </state>
           </provider>
         </entry>
@@ -47,6 +56,13 @@
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="GradleLocalSettings">
     <option name="myGradleHomes">
@@ -2768,12 +2784,11 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/main/java/com/example/questions/Replace_space_with_URLify.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/questions/Find_next_perfect_number.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="1959" />
-    <option name="y" value="-572" />
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="width" value="1680" />
     <option name="height" value="1050" />
   </component>
@@ -3008,7 +3023,6 @@
     <panes>
       <pane id="Scope" />
       <pane id="PackagesPane" />
-      <pane id="ProjectPane" />
       <pane id="AndroidView">
         <subPane>
           <expand>
@@ -3027,35 +3041,16 @@
               <item name="java" type="f7eae187:NonAndroidSourceTypeNode" />
               <item name="questions" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="questions" type="1abcf292:AndroidViewProjectNode" />
-              <item name="questions" type="e9137016:NonAndroidModuleNode" />
-              <item name="java" type="f7eae187:NonAndroidSourceTypeNode" />
-              <item name="questions" type="462c0819:PsiDirectoryNode" />
-              <item name="binary_tree" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="questions" type="1abcf292:AndroidViewProjectNode" />
-              <item name="questions" type="e9137016:NonAndroidModuleNode" />
-              <item name="java" type="f7eae187:NonAndroidSourceTypeNode" />
-              <item name="questions" type="462c0819:PsiDirectoryNode" />
-              <item name="check_if_subtree" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="questions" type="1abcf292:AndroidViewProjectNode" />
-              <item name="questions" type="e9137016:NonAndroidModuleNode" />
-              <item name="java" type="f7eae187:NonAndroidSourceTypeNode" />
-              <item name="questions" type="462c0819:PsiDirectoryNode" />
-              <item name="arrays_and_strings" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="ProjectPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="android.sdk.path" value="$USER_HOME$/Library/Android/sdk" />
+    <property name="device.picker.selection" value="Pixel_2_XL_API_27" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
@@ -3072,7 +3067,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Replace_space_with_URLify">
+  <component name="RunManager" selected="Application.Find_next_perfect_number">
     <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
@@ -3093,7 +3088,7 @@
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="myapplication" type="AndroidRunConfigurationType" factoryName="Android App">
+    <configuration name="myapplication" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
       <module name="myapplication" />
       <option name="DEPLOY" value="true" />
       <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
@@ -3141,6 +3136,17 @@
       </Profilers>
       <option name="DEEP_LINK" value="" />
       <option name="ACTIVITY_CLASS" value="" />
+    </configuration>
+    <configuration name="Find_next_perfect_number" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.questions.Find_next_perfect_number" />
+      <module name="questions" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.questions.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
     </configuration>
     <configuration name="Replace_space_with_URLify" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.example.questions.Replace_space_with_URLify" />
@@ -3214,9 +3220,11 @@
     <list>
       <item itemvalue="Android App.myapplication" />
       <item itemvalue="Application.Replace_space_with_URLify" />
+      <item itemvalue="Application.Find_next_perfect_number" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Find_next_perfect_number" />
         <item itemvalue="Application.Replace_space_with_URLify" />
       </list>
     </recent_temporary>
@@ -3235,25 +3243,26 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1920" y="-569" width="1680" height="1050" extended-state="0" />
+    <frame x="0" y="0" width="1680" height="1050" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info anchor="bottom" id="Android Profiler" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Android Profiler" order="7" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Build Variants" order="2" side_tool="true" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32890365" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.33887044" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.31832796" />
       <window_info anchor="bottom" id="Logcat" order="7" />
       <window_info id="Captures" order="2" weight="0.25" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
       <window_info anchor="bottom" id="Statistic" order="7" />
-      <window_info anchor="bottom" id="Build" order="7" visible="true" weight="0.32890365" />
+      <window_info anchor="bottom" id="Build" order="7" weight="0.31832796" />
       <window_info anchor="right" id="Gradle" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Fabric" order="3" />
@@ -3309,6 +3318,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/example/questions/Replace_space_with_URLify.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="918">
+          <caret line="54" column="10" selection-start-line="54" selection-start-column="10" selection-end-line="54" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/questions/cracking_the_coding_interview/arrays_and_strings/URLify.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="663">
+          <caret line="39" column="9" selection-start-line="39" selection-start-column="9" selection-end-line="39" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/questions/Replace_space_with_URLify.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="578">
           <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
         </state>
@@ -3330,8 +3353,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/example/questions/Replace_space_with_URLify.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="149">
-          <caret line="54" column="10" selection-start-line="54" selection-start-column="10" selection-end-line="54" selection-end-column="10" />
+        <state relative-caret-position="306">
+          <caret line="44" column="41" selection-start-line="44" selection-start-column="41" selection-end-line="44" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/questions/Find_next_perfect_number.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
         </state>
       </provider>
     </entry>
