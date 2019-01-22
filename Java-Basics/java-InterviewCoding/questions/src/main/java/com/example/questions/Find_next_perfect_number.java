@@ -6,6 +6,8 @@ public class Find_next_perfect_number {
 
         System.out.println(findPerfectNumber(7));
 
+
+
     }
 
     private static boolean isPerfectNumber(int number) {
