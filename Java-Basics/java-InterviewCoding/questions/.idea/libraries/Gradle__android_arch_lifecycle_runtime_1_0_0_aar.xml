@@ -5,8 +5,6 @@
       <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/8c57323fc6a34a9fe8d7e3af2a1789a2/res" />
     </CLASSES>
     <JAVADOC />
-    <SOURCES>
-      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/android.arch.lifecycle/runtime/1.0.0/1dd0298d8c45d8dfa4d038270247327f23df7a3a/runtime-1.0.0-sources.jar!/" />
-    </SOURCES>
+    <SOURCES />
   </library>
 </component>

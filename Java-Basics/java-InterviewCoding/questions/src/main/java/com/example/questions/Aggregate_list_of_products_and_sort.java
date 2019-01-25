@@ -22,6 +22,7 @@ public class Aggregate_list_of_products_and_sort {
         productList.add("product4");
         productList.add("product2");
 
+        int[] arr = new int[]{2,3,4,5};
         getProductCount(productList);
 
     }
