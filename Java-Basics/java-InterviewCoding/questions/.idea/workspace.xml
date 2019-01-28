@@ -7,49 +7,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1205ea07-cdad-4ce9-a045-28388496aad1" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/../../../Samples(kotlin)/android-HelloWorld/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Samples(kotlin)/android-HelloWorld/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Samples(kotlin)/android-HelloWorld/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Samples(kotlin)/kotlin-basicconcepts/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Samples(kotlin)/kotlin-basicconcepts/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Samples(kotlin)/kotlin-basicconcepts/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Samples(kotlin)/kotlin-basicconcepts/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Samples(kotlin)/kotlin-basicconcepts/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Samples(kotlin)/kotlin-basicconcepts/.idea/runConfigurations.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Samples(kotlin)/kotlin-basicconcepts/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Samples(kotlin)/kotlin-basicconcepts/app/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Samples(kotlin)/kotlin-basicconcepts/app/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Samples(kotlin)/kotlin-basicconcepts/app/proguard-rules.pro" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Samples(kotlin)/kotlin-basicconcepts/app/src/androidTest/java/com/example/user/kotlin_basicconcepts/ExampleInstrumentedTest.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Samples(kotlin)/kotlin-basicconcepts/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Samples(kotlin)/kotlin-basicconcepts/app/src/main/java/com/example/user/kotlin_basicconcepts/MainActivity.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Samples(kotlin)/kotlin-basicconcepts/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Samples(kotlin)/kotlin-basicconcepts/app/src/main/res/drawable/ic_launcher_background.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Samples(kotlin)/kotlin-basicconcepts/app/src/main/res/layout/activity_main.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Samples(kotlin)/kotlin-basicconcepts/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Samples(kotlin)/kotlin-basicconcepts/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Samples(kotlin)/kotlin-basicconcepts/app/src/main/res/mipmap-hdpi/ic_launcher.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Samples(kotlin)/kotlin-basicconcepts/app/src/main/res/mipmap-hdpi/ic_launcher_round.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Samples(kotlin)/kotlin-basicconcepts/app/src/main/res/mipmap-mdpi/ic_launcher.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Samples(kotlin)/kotlin-basicconcepts/app/src/main/res/mipmap-mdpi/ic_launcher_round.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Samples(kotlin)/kotlin-basicconcepts/app/src/main/res/mipmap-xhdpi/ic_launcher.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Samples(kotlin)/kotlin-basicconcepts/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Samples(kotlin)/kotlin-basicconcepts/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Samples(kotlin)/kotlin-basicconcepts/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Samples(kotlin)/kotlin-basicconcepts/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Samples(kotlin)/kotlin-basicconcepts/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Samples(kotlin)/kotlin-basicconcepts/app/src/main/res/values/colors.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Samples(kotlin)/kotlin-basicconcepts/app/src/main/res/values/strings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Samples(kotlin)/kotlin-basicconcepts/app/src/main/res/values/styles.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Samples(kotlin)/kotlin-basicconcepts/app/src/test/java/com/example/user/kotlin_basicconcepts/ExampleUnitTest.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Samples(kotlin)/kotlin-basicconcepts/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Samples(kotlin)/kotlin-basicconcepts/gradle.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Samples(kotlin)/kotlin-basicconcepts/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Samples(kotlin)/kotlin-basicconcepts/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Samples(kotlin)/kotlin-basicconcepts/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Samples(kotlin)/kotlin-basicconcepts/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Samples(kotlin)/kotlin-basicconcepts/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/questions/Find_the_range_of_numbers_that_is_equal_to_sum.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Samples(kotlin)/kotlin-basicconcepts/app/src/main/java/com/example/user/kotlin_basicconcepts/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Samples(kotlin)/kotlin-basicconcepts/app/src/main/java/com/example/user/kotlin_basicconcepts/MainActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Samples(kotlin)/kotlin-basicconcepts/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Samples(kotlin)/kotlin-basicconcepts/app/src/main/res/layout/activity_main.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -85,22 +46,22 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="611" />
+          <entry key="java" value="885" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="611" />
+          <entry key="JAVA" value="885" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="2" />
+          <entry key="java" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="2" />
+          <entry key="JAVA" value="3" />
         </counts>
       </usages-collector>
     </session>
@@ -165,11 +126,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/example/questions/Find_indices_in_array_with_given_product.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="323">
-              <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+              <caret line="19" selection-start-line="19" selection-end-line="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/questions/Find_the_range_of_numbers_that_is_equal_to_sum.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="412">
+              <caret line="29" column="4" selection-start-line="29" selection-start-column="4" selection-end-line="29" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -2920,6 +2890,7 @@
         <option value="$PROJECT_DIR$/src/main/java/com/example/questions/AbstractTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/questions/Aggregate_list_of_products_and_sort.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/questions/Find_indices_in_array_with_given_product.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/questions/Find_the_range_of_numbers_that_is_equal_to_sum.java" />
       </list>
     </option>
   </component>
@@ -3152,7 +3123,9 @@
       </profile-state>
     </entry>
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -3216,7 +3189,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Find_next_perfect_number">
+  <component name="RunManager" selected="Application.Find_the_range_of_numbers_that_is_equal_to_sum">
     <configuration name="&lt;template&gt;" type="Applet" default="true" selected="false">
       <option name="MAIN_CLASS_NAME" />
       <option name="HTML_FILE_NAME" />
@@ -3323,6 +3296,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Find_the_range_of_numbers_that_is_equal_to_sum" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.questions.Find_the_range_of_numbers_that_is_equal_to_sum" />
+      <module name="questions" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.questions.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Replace_space_with_URLify" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.example.questions.Replace_space_with_URLify" />
       <module name="questions" />
@@ -3355,9 +3342,11 @@
       <item itemvalue="Android App.myapplication" />
       <item itemvalue="Application.Replace_space_with_URLify" />
       <item itemvalue="Application.Find_next_perfect_number" />
+      <item itemvalue="Application.Find_the_range_of_numbers_that_is_equal_to_sum" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Find_the_range_of_numbers_that_is_equal_to_sum" />
         <item itemvalue="Application.Find_next_perfect_number" />
         <item itemvalue="Application.Replace_space_with_URLify" />
       </list>
@@ -3378,9 +3367,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1920" y="0" width="1920" height="1080" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14346895" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24625267" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Build Variants" order="3" side_tool="true" />
@@ -3390,8 +3378,8 @@
       <window_info id="Capture Tool" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.33829787" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4097453" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.25638297" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.33829787" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -3495,7 +3483,14 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/example/questions/Find_indices_in_array_with_given_product.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
-          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/questions/Find_the_range_of_numbers_that_is_equal_to_sum.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="412">
+          <caret line="29" column="4" selection-start-line="29" selection-start-column="4" selection-end-line="29" selection-end-column="4" />
         </state>
       </provider>
     </entry>
