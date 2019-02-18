@@ -2,14 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ef0c75dd-f1b6-4319-95c4-0809872e6b6e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/questions/src/main/java/com/example/questions/sort_worker_salaries/Question - Sort Salaries.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/questions/src/main/java/com/example/questions/sort_worker_salaries/Solution.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/questions/src/main/java/com/example/questions/string_encoder/Question - String encoder.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/questions/src/main/java/com/example/questions/string_encoder/String_encoder.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/questions/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/questions/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/questions/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/questions/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Samples(kotlin)/kotlin-basicconcepts/app/src/main/java/com/example/user/kotlin_basicconcepts/ClassesPropertiesAndInterfaces/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../../Samples(kotlin)/kotlin-basicconcepts/app/src/main/java/com/example/user/kotlin_basicconcepts/ClassesPropertiesAndInterfaces/Main.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Samples(kotlin)/kotlin-basicconcepts/app/src/main/java/com/example/user/kotlin_basicconcepts/ClassesPropertiesAndInterfaces/Test.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../../Samples(kotlin)/kotlin-basicconcepts/app/src/main/java/com/example/user/kotlin_basicconcepts/ClassesPropertiesAndInterfaces/Test.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Samples(kotlin)/kotlinClassesPropertiesAndInterfaces/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Samples(kotlin)/kotlinClassesPropertiesAndInterfaces/.idea/codeStyles/Project.xml" afterDir="false" />
@@ -51,35 +46,44 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="2" />
+          <entry key="java" value="3" />
           <entry key="png" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="Image" value="1" />
-          <entry key="JAVA" value="2" />
+          <entry key="JAVA" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="1187" />
+          <entry key="java" value="4104" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="1187" />
+          <entry key="JAVA" value="4104" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/questions/src/main/java/com/example/questions/sort_worker_salaries/Solution.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="92">
-              <caret line="20" selection-start-line="20" selection-end-line="20" />
+            <state relative-caret-position="275">
+              <caret line="60" column="31" selection-start-line="60" selection-start-column="31" selection-end-line="60" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/questions/src/main/java/com/example/questions/string_encoder/String_encoder.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-202">
+              <caret line="133" column="5" lean-forward="true" selection-start-line="8" selection-start-column="3" selection-end-line="133" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -2825,6 +2829,7 @@
       <list>
         <option value="$PROJECT_DIR$/questions/src/main/java/com/example/questions/Sort_Worker_Salaries.java" />
         <option value="$PROJECT_DIR$/questions/src/main/java/com/example/questions/sort_worker_salaries/Solution.java" />
+        <option value="$PROJECT_DIR$/questions/src/main/java/com/example/questions/string_encoder/String_encoder.java" />
       </list>
     </option>
   </component>
@@ -3090,6 +3095,13 @@
               <item name="questions" type="462c0819:PsiDirectoryNode" />
               <item name="sort_worker_salaries" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="java-InterviewCoding" type="1abcf292:AndroidViewProjectNode" />
+              <item name="questions" type="e9137016:NonAndroidModuleNode" />
+              <item name="java" type="f7eae187:NonAndroidSourceTypeNode" />
+              <item name="questions" type="462c0819:PsiDirectoryNode" />
+              <item name="string_encoder" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -3108,6 +3120,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/questions/src/main/java/com/example/questions/string_encoder" />
       <recent name="$PROJECT_DIR$/questions/src/main/java/com/example/questions/sort_worker_salaries" />
     </key>
   </component>
@@ -3123,7 +3136,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Solution">
+  <component name="RunManager" selected="Application.String_encoder">
     <configuration name="&lt;template&gt;" type="Applet" default="true" selected="false">
       <option name="MAIN_CLASS_NAME" />
       <option name="HTML_FILE_NAME" />
@@ -3230,6 +3243,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="String_encoder" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.questions.string_encoder.String_encoder" />
+      <module name="questions" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.questions.string_encoder.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
@@ -3247,9 +3274,11 @@
     <list>
       <item itemvalue="Android App.myapplication" />
       <item itemvalue="Application.Solution" />
+      <item itemvalue="Application.String_encoder" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.String_encoder" />
         <item itemvalue="Application.Solution" />
       </list>
     </recent_temporary>
@@ -3284,7 +3313,7 @@
       <window_info anchor="bottom" id="Android Profiler" show_stripe_button="false" />
       <window_info anchor="bottom" id="Statistic" />
       <window_info anchor="bottom" id="Debug" weight="0.32978722" />
-      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Terminal" weight="0.32978722" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
       <window_info anchor="bottom" id="Build" weight="0.32978722" />
@@ -3313,8 +3342,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/questions/src/main/java/com/example/questions/sort_worker_salaries/Solution.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="20" selection-start-line="20" selection-end-line="20" />
+        <state relative-caret-position="275">
+          <caret line="60" column="31" selection-start-line="60" selection-start-column="31" selection-end-line="60" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/questions/src/main/java/com/example/questions/string_encoder/String_encoder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-202">
+          <caret line="133" column="5" lean-forward="true" selection-start-line="8" selection-start-column="3" selection-end-line="133" selection-end-column="5" />
         </state>
       </provider>
     </entry>
