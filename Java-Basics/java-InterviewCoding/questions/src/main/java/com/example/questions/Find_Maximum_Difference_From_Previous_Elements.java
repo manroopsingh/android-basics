@@ -1,5 +1,7 @@
 package com.example.questions;
 
+import java.util.Collections;
+
 public class Find_Maximum_Difference_From_Previous_Elements {
 
 
@@ -7,6 +9,7 @@ public class Find_Maximum_Difference_From_Previous_Elements {
 
         int[] a = new int[]{2, 3, 10, 3, 4, 8, 1};
         System.out.println(maxDifference(a));
+
 
     }
 
