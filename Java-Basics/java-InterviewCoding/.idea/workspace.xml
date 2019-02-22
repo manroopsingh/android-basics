@@ -130,7 +130,7 @@
         <entry file="file://$PROJECT_DIR$/questions/src/main/java/com/example/questions/Find_Maximum_Difference_From_Previous_Elements.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="169">
-              <caret line="12" column="8" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
+              <caret line="12" selection-start-line="12" selection-end-line="12" />
             </state>
           </provider>
         </entry>
@@ -3428,7 +3428,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Captures" order="0" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="1" />
@@ -3438,12 +3437,12 @@
       <window_info id="Build Variants" order="5" side_tool="true" />
       <window_info id="Image Layers" order="6" />
       <window_info id="Capture Tool" order="7" />
-      <window_info active="true" anchor="bottom" id="Metrics" visible="true" weight="0.34065935" />
+      <window_info anchor="bottom" id="Metrics" weight="0.34065935" />
       <window_info anchor="bottom" id="Run" order="0" weight="0.16808511" />
       <window_info anchor="bottom" id="TODO" order="1" />
       <window_info anchor="bottom" id="Statistic" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.32978722" />
-      <window_info anchor="bottom" id="Terminal" order="4" weight="0.5382979" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="4" visible="true" weight="0.53736264" />
       <window_info anchor="bottom" id="Event Log" order="5" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="6" show_stripe_button="false" />
       <window_info anchor="bottom" id="Build" order="7" weight="0.32978722" />
@@ -3521,7 +3520,7 @@
     <entry file="file://$PROJECT_DIR$/questions/src/main/java/com/example/questions/Find_Maximum_Difference_From_Previous_Elements.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="169">
-          <caret line="12" column="8" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
         </state>
       </provider>
     </entry>

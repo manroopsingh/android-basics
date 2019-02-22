@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cf4af2bf-9241-443e-8eb2-e7ac5ef0f2b7" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/android-basics.iml" afterPath="$PROJECT_DIR$/.idea/android-basics.iml" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="android-basics.iws" />
@@ -107,7 +105,7 @@
   <component name="PropertiesComponent">
     <property name="android.sdk.path" value="$USER_HOME$/Library/Android/sdk" />
     <property name="settings.editor.selected.configurable" value="configurable.group.language" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Samples/android-Animation" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
