@@ -37,6 +37,8 @@ For each query, output the result of the query.
             //System.out.println(line);
             command(line, board);
         }
+
+
     }
 
 
