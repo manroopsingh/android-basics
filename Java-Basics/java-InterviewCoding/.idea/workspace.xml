@@ -5,28 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ef0c75dd-f1b6-4319-95c4-0809872e6b6e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gradle/4.1/fileChanges/last-build.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.1/fileContent/fileContent.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.1/fileHashes/fileHashes.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.1/fileHashes/fileHashes.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.1/fileHashes/resourceHashesCache.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.1/javaCompile/classAnalysis.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.1/javaCompile/jarAnalysis.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.1/javaCompile/javaCompile.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.1/javaCompile/taskHistory.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.1/javaCompile/taskJars.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.1/taskHistory/fileSnapshots.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.1/taskHistory/taskHistory.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.1/taskHistory/taskHistory.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/questions/src/main/java/com/example/questions/calculate_minimum_amount/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/questions/src/main/java/com/example/questions/calculate_minimum_amount/question.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Samples(kotlin)/kotlin-basicconcepts/app/src/main/java/com/example/user/kotlin_basicconcepts/BasicConcepts/Main.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/questions/src/main/java/com/example/questions/Find_Maximum_Difference_From_Previous_Elements.java" beforeDir="false" afterPath="$PROJECT_DIR$/questions/src/main/java/com/example/questions/Find_Maximum_Difference_From_Previous_Elements.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/questions/src/main/java/com/example/questions/Running_commands_on_a_board.java" beforeDir="false" afterPath="$PROJECT_DIR$/questions/src/main/java/com/example/questions/Running_commands_on_a_board.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Samples(kotlin)/kotlin-basicconcepts/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Samples(kotlin)/kotlin-basicconcepts/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/local.properties" beforeDir="false" afterPath="$PROJECT_DIR$/local.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Samples(kotlin)/kotlin-basicconcepts/app/src/main/java/com/example/user/kotlin_basicconcepts/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../../Samples(kotlin)/kotlin-basicconcepts/app/src/main/java/com/example/user/kotlin_basicconcepts/MainActivity.kt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -60,42 +44,37 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="gradle" value="1" />
-          <entry key="java" value="8" />
+          <entry key="java" value="9" />
           <entry key="png" value="1" />
+          <entry key="properties" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="Groovy" value="1" />
           <entry key="Image" value="1" />
-          <entry key="JAVA" value="8" />
+          <entry key="JAVA" value="9" />
+          <entry key="Properties" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="gradle" value="2" />
-          <entry key="java" value="4360" />
+          <entry key="java" value="4986" />
+          <entry key="properties" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Groovy" value="2" />
-          <entry key="JAVA" value="4360" />
+          <entry key="JAVA" value="4986" />
+          <entry key="Properties" value="2" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/questions/src/main/java/com/example/questions/sort_worker_salaries/Solution.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="918">
-              <caret line="60" column="31" selection-start-line="60" selection-start-column="31" selection-end-line="60" selection-end-column="31" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/questions/src/main/java/com/example/questions/string_encoder/String_encoder.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -108,8 +87,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/questions/src/main/java/com/example/questions/Find_words_in_dictionary.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" selection-start-line="5" selection-end-line="5" />
+            <state relative-caret-position="221">
+              <caret line="13" selection-start-line="13" selection-end-line="13" />
             </state>
           </provider>
         </entry>
@@ -126,7 +105,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/questions/src/main/java/com/example/questions/Find_Maximum_Difference_From_Previous_Elements.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="169">
@@ -147,8 +126,29 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/questions/src/main/java/com/example/questions/Rover_movement_Find_final_rover_position.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="22" selection-start-line="22" selection-end-line="22" />
+            <state relative-caret-position="287">
+              <caret line="52" column="9" selection-start-line="44" selection-end-line="52" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/questions/src/main/java/com/example/questions/calculate_minimum_amount/Solution.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="350">
+              <caret line="26" column="56" selection-start-line="26" selection-start-column="56" selection-end-line="26" selection-end-column="56" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/local.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="9" selection-start-line="9" selection-end-line="9" />
             </state>
           </provider>
         </entry>
@@ -2939,12 +2939,15 @@
         <option value="$PROJECT_DIR$/questions/src/main/java/com/example/questions/Running_commands_on_a_board.java" />
         <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/questions/src/main/java/com/example/questions/Find_Maximum_Difference_From_Previous_Elements.java" />
+        <option value="$PROJECT_DIR$/local.properties" />
+        <option value="$PROJECT_DIR$/questions/src/main/java/com/example/questions/calculate_minimum_amount/Solution.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="width" value="1680" />
-    <option name="height" value="1050" />
+    <option name="x" value="3840" />
+    <option name="width" value="1920" />
+    <option name="height" value="1080" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -3198,6 +3201,20 @@
             </path>
             <path>
               <item name="java-InterviewCoding" type="1abcf292:AndroidViewProjectNode" />
+              <item name="questions" type="e9137016:NonAndroidModuleNode" />
+              <item name="java" type="f7eae187:NonAndroidSourceTypeNode" />
+              <item name="questions" type="462c0819:PsiDirectoryNode" />
+              <item name="calculate_minimum_amount" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="java-InterviewCoding" type="1abcf292:AndroidViewProjectNode" />
+              <item name="questions" type="e9137016:NonAndroidModuleNode" />
+              <item name="java" type="f7eae187:NonAndroidSourceTypeNode" />
+              <item name="questions" type="462c0819:PsiDirectoryNode" />
+              <item name="string_encoder" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="java-InterviewCoding" type="1abcf292:AndroidViewProjectNode" />
               <item name="Gradle Scripts" type="ae0cef3a:AndroidBuildScriptsGroupNode" />
             </path>
           </expand>
@@ -3217,6 +3234,9 @@
     <property name="sync.plugin.last.upgrade.timestamp" value="1550508536167" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/questions/src/main/java/com/example/questions/calculate_minimum_amount" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/questions/src/main/java/com/example/questions/string_encoder" />
       <recent name="$PROJECT_DIR$/questions/src/main/java/com/example/questions/sort_worker_salaries" />
@@ -3234,7 +3254,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Find_Maximum_Difference_From_Previous_Elements">
+  <component name="RunManager" selected="Application.Solution (1)">
     <configuration name="&lt;template&gt;" type="Applet" default="true" selected="false">
       <option name="MAIN_CLASS_NAME" />
       <option name="HTML_FILE_NAME" />
@@ -3355,6 +3375,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Solution (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.questions.calculate_minimum_amount.Solution" />
+      <module name="questions" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.questions.calculate_minimum_amount.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Solution" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.example.questions.sort_worker_salaries.Solution" />
       <module name="questions" />
@@ -3403,9 +3437,11 @@
       <item itemvalue="Application.String_encoder" />
       <item itemvalue="Application.Running_commands_on_a_board" />
       <item itemvalue="Application.Find_Maximum_Difference_From_Previous_Elements" />
+      <item itemvalue="Application.Solution (1)" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Solution (1)" />
         <item itemvalue="Application.Find_Maximum_Difference_From_Previous_Elements" />
         <item itemvalue="Application.Running_commands_on_a_board" />
         <item itemvalue="Application.String_encoder" />
@@ -3427,22 +3463,23 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1680" height="1050" extended-state="6" />
+    <frame x="3840" y="0" width="1920" height="1080" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Captures" order="0" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="1" />
-      <window_info content_ui="combo" id="Project" order="2" visible="true" weight="0.3783784" />
+      <window_info content_ui="combo" id="Project" order="2" visible="true" weight="0.32976446" />
       <window_info id="Structure" order="3" side_tool="true" />
       <window_info id="Favorites" order="4" side_tool="true" />
       <window_info id="Build Variants" order="5" side_tool="true" />
       <window_info id="Image Layers" order="6" />
       <window_info id="Capture Tool" order="7" />
       <window_info anchor="bottom" id="Metrics" weight="0.34065935" />
-      <window_info anchor="bottom" id="Run" order="0" weight="0.16808511" />
+      <window_info active="true" anchor="bottom" id="Run" order="0" visible="true" weight="0.16808511" />
       <window_info anchor="bottom" id="TODO" order="1" />
       <window_info anchor="bottom" id="Statistic" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.32978722" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="4" visible="true" weight="0.53736264" />
+      <window_info anchor="bottom" id="Terminal" order="4" weight="0.52021277" />
       <window_info anchor="bottom" id="Event Log" order="5" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="6" show_stripe_button="false" />
       <window_info anchor="bottom" id="Build" order="7" weight="0.32978722" />
@@ -3478,8 +3515,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/questions/src/main/java/com/example/questions/Find_words_in_dictionary.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        <state relative-caret-position="221">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
         </state>
       </provider>
     </entry>
@@ -3500,13 +3537,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/questions/src/main/java/com/example/questions/Rover_movement_Find_final_rover_position.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/questions/src/main/java/com/example/questions/Consecutive_prime_in_necklace.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
@@ -3521,6 +3551,30 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="169">
           <caret line="12" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/questions/src/main/java/com/example/questions/Rover_movement_Find_final_rover_position.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="287">
+          <caret line="52" column="9" selection-start-line="44" selection-end-line="52" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/local.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/questions/src/main/java/com/example/questions/calculate_minimum_amount/Solution.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="26" column="56" selection-start-line="26" selection-start-column="56" selection-end-line="26" selection-end-column="56" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
