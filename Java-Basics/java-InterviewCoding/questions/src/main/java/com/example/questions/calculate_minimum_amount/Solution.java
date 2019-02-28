@@ -13,15 +13,15 @@ public class Solution {
     }
 
 
-    public static int calculateAmount(List<Integer> prices){
+    public static long calculateAmount(List<Integer> prices){
 
-        int currentMin = prices.get(0);
-        int currentPrice = 0;
-        int totalCost = prices.get(0);
+        long currentMin = prices.get(0);
+        long currentPrice = 0;
+        long totalCost = prices.get(0);
 
         for (int i = 1; i < prices.size(); i++) {
 
-            if (prices.get(i) > currentMin) {
+            if (prices.get(i) >= currentMin) {
                 currentPrice = prices.get(i) - currentMin;
                 totalCost += currentPrice;
             }
@@ -33,7 +33,7 @@ public class Solution {
 
     }
 
-    public static int getCurrentMin(int currentPrice, int newPrice) {
+    public static long getCurrentMin(long currentPrice, long newPrice) {
 
         if(currentPrice>=newPrice) return newPrice;
         else return currentPrice;

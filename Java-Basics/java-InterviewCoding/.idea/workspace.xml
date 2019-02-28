@@ -5,12 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ef0c75dd-f1b6-4319-95c4-0809872e6b6e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/questions/src/main/java/com/example/questions/calculate_minimum_amount/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/questions/src/main/java/com/example/questions/calculate_minimum_amount/question.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Samples(kotlin)/kotlin-basicconcepts/app/src/main/java/com/example/user/kotlin_basicconcepts/BasicConcepts/Main.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/local.properties" beforeDir="false" afterPath="$PROJECT_DIR$/local.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Samples(kotlin)/kotlin-basicconcepts/app/src/main/java/com/example/user/kotlin_basicconcepts/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../../Samples(kotlin)/kotlin-basicconcepts/app/src/main/java/com/example/user/kotlin_basicconcepts/MainActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/questions/src/main/java/com/example/questions/Find_Maximum_Difference_From_Previous_Elements.java" beforeDir="false" afterPath="$PROJECT_DIR$/questions/src/main/java/com/example/questions/Find_Maximum_Difference_From_Previous_Elements.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/questions/src/main/java/com/example/questions/Rover_movement_Find_final_rover_position.java" beforeDir="false" afterPath="$PROJECT_DIR$/questions/src/main/java/com/example/questions/Rover_movement_Find_final_rover_position.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/questions/src/main/java/com/example/questions/calculate_minimum_amount/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/questions/src/main/java/com/example/questions/calculate_minimum_amount/Solution.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -60,14 +58,14 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="gradle" value="2" />
-          <entry key="java" value="4986" />
+          <entry key="java" value="5444" />
           <entry key="properties" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Groovy" value="2" />
-          <entry key="JAVA" value="4986" />
+          <entry key="JAVA" value="5444" />
           <entry key="Properties" value="2" />
         </counts>
       </usages-collector>
@@ -108,8 +106,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/questions/src/main/java/com/example/questions/Find_Maximum_Difference_From_Previous_Elements.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="169">
-              <caret line="12" selection-start-line="12" selection-end-line="12" />
+            <state relative-caret-position="597">
+              <caret line="57" column="5" lean-forward="true" selection-start-line="57" selection-start-column="5" selection-end-line="57" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -123,20 +121,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/questions/src/main/java/com/example/questions/Rover_movement_Find_final_rover_position.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="287">
-              <caret line="52" column="9" selection-start-line="44" selection-end-line="52" selection-end-column="9" />
+            <state relative-caret-position="170">
+              <caret line="11" column="30" lean-forward="true" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/questions/src/main/java/com/example/questions/calculate_minimum_amount/Solution.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="350">
-              <caret line="26" column="56" selection-start-line="26" selection-start-column="56" selection-end-line="26" selection-end-column="56" />
+            <state relative-caret-position="281">
+              <caret line="17" column="21" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -2938,9 +2936,10 @@
         <option value="$PROJECT_DIR$/questions/src/main/java/com/example/questions/Consecutive_prime_in_necklace.java" />
         <option value="$PROJECT_DIR$/questions/src/main/java/com/example/questions/Running_commands_on_a_board.java" />
         <option value="$PROJECT_DIR$/build.gradle" />
-        <option value="$PROJECT_DIR$/questions/src/main/java/com/example/questions/Find_Maximum_Difference_From_Previous_Elements.java" />
         <option value="$PROJECT_DIR$/local.properties" />
         <option value="$PROJECT_DIR$/questions/src/main/java/com/example/questions/calculate_minimum_amount/Solution.java" />
+        <option value="$PROJECT_DIR$/questions/src/main/java/com/example/questions/Find_Maximum_Difference_From_Previous_Elements.java" />
+        <option value="$PROJECT_DIR$/questions/src/main/java/com/example/questions/Rover_movement_Find_final_rover_position.java" />
       </list>
     </option>
   </component>
@@ -3254,7 +3253,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Solution (1)">
+  <component name="RunManager" selected="Application.Find_Maximum_Difference_From_Previous_Elements">
     <configuration name="&lt;template&gt;" type="Applet" default="true" selected="false">
       <option name="MAIN_CLASS_NAME" />
       <option name="HTML_FILE_NAME" />
@@ -3361,6 +3360,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Rover_movement_Find_final_rover_position" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.questions.Rover_movement_Find_final_rover_position" />
+      <module name="questions" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.questions.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Running_commands_on_a_board" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.example.questions.Running_commands_on_a_board" />
       <module name="questions" />
@@ -3382,20 +3395,6 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.example.questions.calculate_minimum_amount.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Solution" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.example.questions.sort_worker_salaries.Solution" />
-      <module name="questions" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.questions.sort_worker_salaries.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -3433,19 +3432,19 @@
     </configuration>
     <list>
       <item itemvalue="Android App.myapplication" />
-      <item itemvalue="Application.Solution" />
       <item itemvalue="Application.String_encoder" />
       <item itemvalue="Application.Running_commands_on_a_board" />
       <item itemvalue="Application.Find_Maximum_Difference_From_Previous_Elements" />
       <item itemvalue="Application.Solution (1)" />
+      <item itemvalue="Application.Rover_movement_Find_final_rover_position" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Solution (1)" />
         <item itemvalue="Application.Find_Maximum_Difference_From_Previous_Elements" />
+        <item itemvalue="Application.Rover_movement_Find_final_rover_position" />
+        <item itemvalue="Application.Solution (1)" />
         <item itemvalue="Application.Running_commands_on_a_board" />
         <item itemvalue="Application.String_encoder" />
-        <item itemvalue="Application.Solution" />
       </list>
     </recent_temporary>
   </component>
@@ -3464,18 +3463,17 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="3840" y="0" width="1920" height="1080" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Captures" order="0" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="1" />
-      <window_info content_ui="combo" id="Project" order="2" visible="true" weight="0.32976446" />
+      <window_info active="true" content_ui="combo" id="Project" order="2" visible="true" weight="0.32976446" />
       <window_info id="Structure" order="3" side_tool="true" />
       <window_info id="Favorites" order="4" side_tool="true" />
       <window_info id="Build Variants" order="5" side_tool="true" />
       <window_info id="Image Layers" order="6" />
       <window_info id="Capture Tool" order="7" />
       <window_info anchor="bottom" id="Metrics" weight="0.34065935" />
-      <window_info active="true" anchor="bottom" id="Run" order="0" visible="true" weight="0.16808511" />
+      <window_info anchor="bottom" id="Run" order="0" visible="true" weight="0.16808511" />
       <window_info anchor="bottom" id="TODO" order="1" />
       <window_info anchor="bottom" id="Statistic" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.32978722" />
@@ -3547,20 +3545,6 @@
     <entry file="file://$PROJECT_DIR$/questions/src/main/java/com/example/questions/sort_worker_salaries/Question - Sort Salaries.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/questions/src/main/java/com/example/questions/Find_Maximum_Difference_From_Previous_Elements.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="169">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/questions/src/main/java/com/example/questions/Rover_movement_Find_final_rover_position.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="287">
-          <caret line="52" column="9" selection-start-line="44" selection-end-line="52" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/local.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -3570,11 +3554,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/questions/src/main/java/com/example/questions/calculate_minimum_amount/Solution.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="26" column="56" selection-start-line="26" selection-start-column="56" selection-end-line="26" selection-end-column="56" />
+        <state relative-caret-position="281">
+          <caret line="17" column="21" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/questions/src/main/java/com/example/questions/Find_Maximum_Difference_From_Previous_Elements.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="597">
+          <caret line="57" column="5" lean-forward="true" selection-start-line="57" selection-start-column="5" selection-end-line="57" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/questions/src/main/java/com/example/questions/Rover_movement_Find_final_rover_position.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="11" column="30" lean-forward="true" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
         </state>
       </provider>
     </entry>

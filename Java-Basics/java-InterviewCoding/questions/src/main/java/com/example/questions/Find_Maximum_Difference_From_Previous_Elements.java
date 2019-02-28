@@ -1,14 +1,29 @@
 package com.example.questions;
 
-import java.util.Collections;
-
 public class Find_Maximum_Difference_From_Previous_Elements {
 
 
     public static void main(String[] args) {
 
+        long startTime = System.currentTimeMillis();
+        long endTime = 0;
+
         int[] a = new int[]{2, 3, 10, 3, 4, 8, 1};
+        int[] b = new int[]{
+                2, 3, 10, 3, 4, 8, 1, 2, 3, 10, 3, 4, 8, 1,
+                2, 3, 10, 3, 4, 8, 1, 2, 3, 10, 3, 4, 8, 1,
+                2, 3, 10, 3, 4, 8, 1, 2, 3, 10, 3, 4, 8, 1,
+                2, 3, 10, 3, 4, 8, 1, 2, 3, 10, 3, 4, 8, 1,
+                2, 3, 10, 3, 4, 8, 1, 2, 3, 10, 3, 4, 8, 1,
+                2, 3, 10, 3, 4, 8, 1, 2, 3, 10, 3, 4, 8, 1,
+                2, 3, 10, 3, 4, 8, 1, 2, 3, 10, 3, 4, 8, 1,
+                2, 3, 10, 3, 4, 8, 1, 2, 3, 10, 3, 4, 8, 1
+
+        };
         System.out.println(maxDifference(a));
+
+        endTime = System.currentTimeMillis() - startTime;
+        System.out.println("Time in milliseconds:" + endTime);
 
 
     }
@@ -23,28 +38,22 @@ public class Find_Maximum_Difference_From_Previous_Elements {
         int currentDifference = 0;
 
         while (j < size - 1) {
-
-
             if (a[j] > a[i])
                 currentDifference = a[j] - a[i];
-
 
             if (currentDifference > maxDifference)
                 maxDifference = currentDifference;
 
-                i--;
+            i--;
 
             if (i < 0) {
 
                 j++;
                 i = j - 1;
             }
-
-
         }
 
-        return maxDifference;
-
-
+        if (maxDifference == 0) return -1;
+        else return maxDifference;
     }
 }
