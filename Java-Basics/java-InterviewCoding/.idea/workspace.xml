@@ -4,12 +4,16 @@
     <option name="SCOPE_TYPE" value="3" />
   </component>
   <component name="ChangeListManager">
+<<<<<<< HEAD
+    <list default="true" id="f205fb87-713f-4b6c-94b9-36fc4e66ce0f" name="Default Changelist" comment="" />
+=======
     <list default="true" id="ef0c75dd-f1b6-4319-95c4-0809872e6b6e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/questions/src/main/java/com/example/questions/Find_Maximum_Difference_From_Previous_Elements.java" beforeDir="false" afterPath="$PROJECT_DIR$/questions/src/main/java/com/example/questions/Find_Maximum_Difference_From_Previous_Elements.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/questions/src/main/java/com/example/questions/Rover_movement_Find_final_rover_position.java" beforeDir="false" afterPath="$PROJECT_DIR$/questions/src/main/java/com/example/questions/Rover_movement_Find_final_rover_position.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/questions/src/main/java/com/example/questions/calculate_minimum_amount/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/questions/src/main/java/com/example/questions/calculate_minimum_amount/Solution.java" afterDir="false" />
     </list>
+>>>>>>> d44d770af5d219890ec14c3e68881844c6048f66
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,8 +98,13 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/questions/src/main/java/com/example/questions/Running_commands_on_a_board.java">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+            <state relative-caret-position="494">
+              <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+=======
             <state relative-caret-position="578">
               <caret line="37" column="33" selection-start-line="37" selection-start-column="33" selection-end-line="37" selection-end-column="33" />
+>>>>>>> d44d770af5d219890ec14c3e68881844c6048f66
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -3564,6 +3573,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/questions/src/main/java/com/example/questions/Find_Maximum_Difference_From_Previous_Elements.java">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="597">
           <caret line="57" column="5" lean-forward="true" selection-start-line="57" selection-start-column="5" selection-end-line="57" selection-end-column="5" />
         </state>
@@ -3573,6 +3583,18 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="11" column="30" lean-forward="true" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
+=======
+<<<<<<< HEAD
+        <state relative-caret-position="494">
+          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+=======
+        <state relative-caret-position="169">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+>>>>>>> d44d770af5d219890ec14c3e68881844c6048f66
+>>>>>>> 7f4bc5856a1b53e667e8fb5487485f5abbd3ecaf
         </state>
       </provider>
     </entry>
