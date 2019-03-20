@@ -3,16 +3,12 @@ package com.example.user.kotlin_basicconcepts
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.GridLayoutManager
-import android.support.v7.widget.LinearLayoutManager
 import android.support.v7.widget.RecyclerView
-import android.util.Log
-import android.view.View
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
 import com.example.user.kotlin_basicconcepts.ClassesPropertiesAndInterfaces.MediaAdapter
-import com.example.user.kotlin_basicconcepts.ClassesPropertiesAndInterfaces.MediaItem
 
 class MainActivity : AppCompatActivity() {
 

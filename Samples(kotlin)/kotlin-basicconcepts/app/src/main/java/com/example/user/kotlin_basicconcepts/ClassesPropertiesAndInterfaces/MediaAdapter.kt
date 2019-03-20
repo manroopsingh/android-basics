@@ -3,9 +3,11 @@ package com.example.user.kotlin_basicconcepts.ClassesPropertiesAndInterfaces
 import android.support.v7.widget.RecyclerView
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
+import android.widget.TextView
 import com.example.user.kotlin_basicconcepts.R
+import com.squareup.picasso.Picasso
 
-class MediaItem
 
 class MediaAdapter(private val items: List<MediaItem>): RecyclerView.Adapter<MediaAdapter.ViewHolder>() {
 
@@ -22,8 +24,12 @@ class MediaAdapter(private val items: List<MediaItem>): RecyclerView.Adapter<Med
 
     class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
 
-        fun bind(item: MediaItem) {
+        val title = itemView.findViewById(R.id.title) as TextView
+        val thumbUrl = itemView.findViewById(R.id.image) as ImageView
 
+        fun bind(item: MediaItem) {
+            title.text = item.title
+            Picasso.get().load(item.thumbUrl).into(thumbUrl)
         }
     }
 
