@@ -9,6 +9,7 @@ import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
 import com.example.user.kotlin_basicconcepts.ClassesPropertiesAndInterfaces.MediaAdapter
+import com.example.user.kotlin_basicconcepts.ClassesPropertiesAndInterfaces.toast
 
 class MainActivity : AppCompatActivity() {
 
@@ -51,9 +52,10 @@ class MainActivity : AppCompatActivity() {
     /*
     Toast is a function that is displaying a text using the Toast class
     */
-    private fun toast(s: String) {
-        Toast.makeText(this, s, Toast.LENGTH_SHORT).show()
-    }
+    //Below Toast function is added to the extension.kt to use the function in all context classes
+//    private fun toast(s: String) {
+//        Toast.makeText(this, s, Toast.LENGTH_SHORT).show()
+//    }
 
 
 

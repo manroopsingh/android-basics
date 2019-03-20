@@ -24,12 +24,12 @@ class MediaAdapter(private val items: List<MediaItem>): RecyclerView.Adapter<Med
 
     class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
 
-        val title = itemView.findViewById(R.id.title) as TextView
-        val thumbUrl = itemView.findViewById(R.id.image) as ImageView
+        val title = itemView.find<TextView>(R.id.title)
+        val imageView = itemView.find<ImageView>(R.id.image)
 
         fun bind(item: MediaItem) {
             title.text = item.title
-            Picasso.get().load(item.thumbUrl).into(thumbUrl)
+            imageView.loadURL(item.thumbUrl)
         }
     }
 
