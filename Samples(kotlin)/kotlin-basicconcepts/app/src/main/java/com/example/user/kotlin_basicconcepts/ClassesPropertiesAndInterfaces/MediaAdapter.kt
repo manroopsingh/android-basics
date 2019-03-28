@@ -5,8 +5,10 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
+import com.example.user.kotlin_basicconcepts.ExtensionFunctions.find
+import com.example.user.kotlin_basicconcepts.ExtensionFunctions.inflate
+import com.example.user.kotlin_basicconcepts.ExtensionFunctions.loadURL
 import com.example.user.kotlin_basicconcepts.R
-import com.squareup.picasso.Picasso
 
 
 class MediaAdapter(private val items: List<MediaItem>): RecyclerView.Adapter<MediaAdapter.ViewHolder>() {

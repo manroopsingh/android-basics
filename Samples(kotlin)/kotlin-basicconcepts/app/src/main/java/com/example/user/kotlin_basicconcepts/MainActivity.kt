@@ -7,9 +7,8 @@ import android.support.v7.widget.RecyclerView
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
-import android.widget.Toast
 import com.example.user.kotlin_basicconcepts.ClassesPropertiesAndInterfaces.MediaAdapter
-import com.example.user.kotlin_basicconcepts.ClassesPropertiesAndInterfaces.toast
+import com.example.user.kotlin_basicconcepts.ExtensionFunctions.toast
 
 class MainActivity : AppCompatActivity() {
 

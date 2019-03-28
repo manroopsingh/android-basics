@@ -1,4 +1,4 @@
-package com.example.user.kotlin_basicconcepts.ClassesPropertiesAndInterfaces
+package com.example.user.kotlin_basicconcepts.ExtensionFunctions
 
 import android.content.Context
 import android.support.annotation.LayoutRes
@@ -29,6 +29,6 @@ fun ImageView.loadURL(url: String) = Picasso.get().load(url).into(this)
 //by adding the keyword inline the kotlin byte code will add the function code
 //within the method invocation
 inline fun <reified T: View>View.find(idRes: Int): T{
-    return findViewById(idRes) as T
+    return findViewById<T>(idRes)
 }
 
