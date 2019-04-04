@@ -1,5 +1,7 @@
 package com.example.questions.binary_tree;
 
+import java.io.Console;
+
 /**
  * Created by singh on 2/13/18.
  */
@@ -9,7 +11,7 @@ public class Main {
     public static void main(String[] args) {
 
 
-        BinaryTree binaryTree = new BinaryTree("sdf");
+        BinaryTree binaryTree = new BinaryTree();
         binaryTree.add(30);
 
         binaryTree.add(5);
@@ -22,7 +24,8 @@ public class Main {
         binaryTree.add(45);
         binaryTree.add(50);
 
-        System.out.println(binaryTree);
+        binaryTree.print(BinaryTree.POST_ORDER);
+
     }
 
 

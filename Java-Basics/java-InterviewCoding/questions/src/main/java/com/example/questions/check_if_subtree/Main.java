@@ -1,5 +1,8 @@
 package com.example.questions.check_if_subtree;
 
+import java.util.HashMap;
+import java.util.HashSet;
+
 /**
  * Created by singh on 2/28/18.
  */
@@ -18,6 +21,35 @@ public class Main {
 
     public static void main(String[] args) {
 
+        int n = 9;
+        int[] ar = new int[]{10, 20, 20, 10, 10, 30, 50, 10, 20};
+
+
+        System.out.println(countingValleys(12, "DDUUDDUDUUUD"));
+
+    }
+
+    static int countingValleys(int n, String s) {
+
+        int valleys = 0;
+        int currentLevel = 0;
+        boolean inValley = false;
+
+        for(int i=0;i<n;i++){
+
+            if(s.charAt(i)=='U') currentLevel++;
+            else currentLevel--;
+
+            if(currentLevel<0) inValley = true;
+
+            if(inValley && currentLevel==0){
+                valleys++;
+                inValley = false;
+            }
+
+        }
+
+        return valleys;
 
     }
 
