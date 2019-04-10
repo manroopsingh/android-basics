@@ -1,4 +1,4 @@
-package com.example.user.kotlin_basicconcepts.ExtensionFunctions
+package com.example.user.kotlin_basicconcepts
 
 import android.content.Context
 import android.support.annotation.LayoutRes

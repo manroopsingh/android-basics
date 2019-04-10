@@ -1,21 +1,29 @@
 package com.example.user.kotlin_basicconcepts.ClassesPropertiesAndInterfaces
 
-/*
-Data classes are used in Kotlin to hold data for an object. The typical operation on data objects
-are reading, altering, comparing and copying of data.
+import com.example.user.kotlin_basicconcepts.Sample.MediaItem
 
-We can use the keyword "data" prefixing the declaration of a class
-*/
 
-data class MediaItem(val title: String, val thumbUrl: String)
+
 
 //Example
 fun main() {
 
 //    Generated Items
-    val media1 = MediaItem("Title", "ThumbUrl")
-    val media2 = MediaItem("Title", "ThumbUrl")
-    val media3 = MediaItem("Title", "ThumbUrl2")
+    val media1 = MediaItem(
+        "Title",
+        "ThumbUrl",
+        MediaItem.Type.PHOTO
+    )
+    val media2 = MediaItem(
+        "Title",
+        "ThumbUrl",
+        MediaItem.Type.PHOTO
+    )
+    val media3 = MediaItem(
+        "Title",
+        "ThumbUrl2",
+        MediaItem.Type.PHOTO
+    )
 
 //toString
     println(media1) //MediaItem(title=Title, thumbUrl=ThumbUrl)

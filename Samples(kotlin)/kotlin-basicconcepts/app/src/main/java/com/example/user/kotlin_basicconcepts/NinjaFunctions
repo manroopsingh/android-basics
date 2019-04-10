@@ -1,0 +1,36 @@
+
+import android.content.Context
+import android.view.View
+import android.widget.TextView
+import com.example.user.kotlin_basicconcepts.toast
+
+fun main() {
+
+}
+
+//using the WITH function
+fun useWith(view: TextView): TextView {
+
+    return with(view){
+        text = "Hello World"
+        background= resources.getDrawable(android.R.color.holo_blue_dark)
+        setOnClickListener { context.toast("used 'with'") }
+        this
+    }
+}
+
+fun useApply(view: TextView): TextView{
+
+    return view.apply {
+        text = "Hello world"
+        textSize = 20f
+        setOnClickListener { context.toast("used 'apply'") }
+    }
+
+}
+
+fun printUseLet(view: TextView){
+    view?.text?.let { print(it.toString())}
+
+}
+

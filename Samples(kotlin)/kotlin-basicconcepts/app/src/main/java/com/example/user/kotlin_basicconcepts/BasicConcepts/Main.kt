@@ -40,7 +40,7 @@ class Main {
 
     */
 
-    fun Toast() {
+    fun toast(message: String) {
 
     }
 

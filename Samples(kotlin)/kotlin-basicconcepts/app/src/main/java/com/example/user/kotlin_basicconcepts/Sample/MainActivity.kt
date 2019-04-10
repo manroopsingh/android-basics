@@ -1,14 +1,15 @@
-package com.example.user.kotlin_basicconcepts
+package com.example.user.kotlin_basicconcepts.Sample
 
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.GridLayoutManager
-import android.support.v7.widget.RecyclerView
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
-import com.example.user.kotlin_basicconcepts.ClassesPropertiesAndInterfaces.MediaAdapter
-import com.example.user.kotlin_basicconcepts.ExtensionFunctions.toast
+import com.example.user.kotlin_basicconcepts.R
+import com.example.user.kotlin_basicconcepts.apply2
+import com.example.user.kotlin_basicconcepts.toast
+import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
 
@@ -41,9 +42,15 @@ class MainActivity : AppCompatActivity() {
 
 
         //bind the RecyclerView
-        val recyclerView: RecyclerView = findViewById(R.id.recycler)
-        recyclerView.layoutManager = GridLayoutManager(this,2)
-        recyclerView.adapter = MediaAdapter(ArrayList())
+        //val recyclerView: RecyclerView = findViewById(R.id.recycler)
+        recycler.layoutManager = GridLayoutManager(this,2)
+        recycler.adapter = MediaAdapter(getMedia()){(title) -> toast(title) }
+
+
+        //example of using your own standard function using Lambda and Extension function (Lambdas.kt)
+        val textView2 = TextView(this).apply2 {
+            text = "Something else"
+        }
 
 
     }

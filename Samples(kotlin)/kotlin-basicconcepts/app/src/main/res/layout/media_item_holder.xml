@@ -2,7 +2,7 @@
 <LinearLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
-        android:layout_width="match_parent" android:layout_height="match_parent"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
         android:orientation="vertical">
 
     <ImageView
@@ -16,6 +16,13 @@
             android:layout_height="wrap_content"
             android:background="#333"
             android:padding="16dp"
-            android:textAppearance="@style/TextAppearance.AppCompat.Medium.Inverse"
             tools:text="Title"/>
+    <ImageView
+            android:id="@+id/media_video_indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            android:src="@drawable/ic_play_circle_outline"
+            tools:visibility="visible"/>
 </LinearLayout>

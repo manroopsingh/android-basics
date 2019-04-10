@@ -14,14 +14,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="200dp"
                 tools:src="@mipmap/ic_launcher"/>
-        <ImageView
-                android:id="@+id/media_video_indicator"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:visibility="gone"
-                android:src="@drawable/ic_play_circle_outline"
-                tools:visibility="visible"/>
+
     </FrameLayout>
     <TextView
             android:id="@+id/media_title"
@@ -29,6 +22,5 @@
             android:layout_height="wrap_content"
             android:background="#333"
             android:padding="16dp"
-            android:textAppearance="@style/TextAppearance.AppCompat.Medium.Inverse"
             tools:text="Title"/>
 </LinearLayout>
