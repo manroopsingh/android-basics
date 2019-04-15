@@ -1,5 +1,8 @@
 package com.example.user.kotlin_basicconcepts.Sample
 
+import com.example.user.kotlin_basicconcepts.doAsync
+import com.example.user.kotlin_basicconcepts.doAsyncWithLambda
+
 object MediaProvider {
 
     private val thumbBase = "http://lorempixel.com/400/400/cats/"
@@ -24,5 +27,21 @@ object MediaProvider {
             "$thumbBase$it",
             if (it % 3 == 0) MediaItem.Type.VIDEO else MediaItem.Type.PHOTO
         )
+    }
+
+    fun dataAsync(callback: (List<MediaItem>) -> Unit) {
+
+        Thread.sleep(2000)
+
+        val data = (1..10).map {
+            MediaItem(
+                "Title $it",
+                "$thumbBase$it",
+                if (it % 3 == 0) MediaItem.Type.VIDEO else MediaItem.Type.PHOTO
+            )
+
+            callback(data)
+
+        }
     }
 }
