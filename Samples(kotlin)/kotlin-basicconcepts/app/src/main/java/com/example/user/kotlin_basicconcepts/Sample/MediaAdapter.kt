@@ -7,14 +7,19 @@ import com.example.user.kotlin_basicconcepts.R
 import com.example.user.kotlin_basicconcepts.inflate
 import com.example.user.kotlin_basicconcepts.loadURL
 import kotlinx.android.synthetic.main.media_item_holder.view.*
-import kotlinx.android.synthetic.main.view_media_item.view.*
+import kotlin.properties.Delegates
 
 
-class MediaAdapter(private val items: List<MediaItem>,  val listener: (MediaItem)->Unit): RecyclerView.Adapter<MediaAdapter.ViewHolder>() {
+class MediaAdapter(items: List<MediaItem>, val listener: (MediaItem)->Unit): RecyclerView.Adapter<MediaAdapter.ViewHolder>() {
 
+//    Since we are using lambdas, we dont need to create the onclick interface like we do in Java
 //    interface OnMediaClickListener{
 //        fun onClick(mediaItem: MediaItem)
 //    }
+
+    var items: List<MediaItem> by Delegates.observable(items){ _, _, _ ->
+        notifyDataSetChanged()
+    }
 
     override fun onCreateViewHolder(parent: ViewGroup, p1: Int): ViewHolder {
         val inflatedView = parent.inflate(R.layout.media_item_holder)
@@ -25,7 +30,6 @@ class MediaAdapter(private val items: List<MediaItem>,  val listener: (MediaItem
         val item = items[position]
         viewHolder.bind(item)
         viewHolder.itemView.setOnClickListener { listener.invoke(item)}
-
     }
 
     override fun getItemCount(): Int = items.size

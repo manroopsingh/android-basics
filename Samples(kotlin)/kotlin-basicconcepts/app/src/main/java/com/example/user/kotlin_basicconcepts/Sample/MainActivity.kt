@@ -1,8 +1,11 @@
 package com.example.user.kotlin_basicconcepts.Sample
 
 import android.os.Bundle
+import android.provider.MediaStore
 import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.GridLayoutManager
+import android.view.Menu
+import android.view.MenuItem
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
@@ -13,7 +16,12 @@ import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
 
+//    works as static in java, but can extend other class to have common functionality
+    companion object {
+        var string: String = ""
+    }
 
+    val adapter = MediaAdapter(emptyList()) { (title) -> toast(title) }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -43,8 +51,13 @@ class MainActivity : AppCompatActivity() {
 
         //bind the RecyclerView
         //val recyclerView: RecyclerView = findViewById(R.id.recycler)
-        recycler.layoutManager = GridLayoutManager(this,2)
-        recycler.adapter = MediaAdapter(getMedia()){(title) -> toast(title) }
+        recycler.layoutManager = GridLayoutManager(this, 2)
+
+//
+//        recycler.adapter = MediaAdapter(getMedia()){(title) -> toast(title) }
+
+        recycler.adapter = adapter
+        adapter.items = MediaProvider.data
 
 
         //example of using your own standard function using Lambda and Extension function (Lambdas.kt)
@@ -55,6 +68,25 @@ class MainActivity : AppCompatActivity() {
 
     }
 
+    override fun onCreateOptionsMenu(menu: Menu): Boolean {
+        menuInflater.inflate(R.menu.main, menu)
+        return true
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+
+        adapter.items = MediaProvider.data.let { media ->
+            when (item.itemId) {
+                R.id.filter_all -> media
+                R.id.filter_photos -> media.filter { it.type == MediaItem.Type.PHOTO }
+                R.id.filter_videos -> media.filter { it.type == MediaItem.Type.VIDEO }
+
+                else -> emptyList()
+            }
+        }
+        return true
+    }
+
     /*
     Toast is a function that is displaying a text using the Toast class
     */
@@ -62,7 +94,6 @@ class MainActivity : AppCompatActivity() {
 //    private fun toast(s: String) {
 //        Toast.makeText(this, s, Toast.LENGTH_SHORT).show()
 //    }
-
 
 
 }
