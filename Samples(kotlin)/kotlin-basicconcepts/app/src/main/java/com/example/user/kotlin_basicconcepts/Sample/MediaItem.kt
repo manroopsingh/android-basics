@@ -7,6 +7,9 @@ are reading, altering, comparing and copying of data.
 We can use the keyword "data" prefixing the declaration of a class
 */
 
-data class MediaItem(val title: String, val thumbUrl: String, val type: Type){
+data class MediaItem(val id:Int, val title: String, val thumbUrl: String, val type: Type){
     enum class Type{PHOTO, VIDEO}
+    fun print(){
+        print(this.toString())
+    }
 }

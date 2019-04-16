@@ -9,8 +9,10 @@ import com.example.user.kotlin_basicconcepts.loadURL
 import kotlinx.android.synthetic.main.media_item_holder.view.*
 import kotlin.properties.Delegates
 
+//used for more readable names for complex lambdas
+typealias Listener = (MediaItem)-> Unit
 
-class MediaAdapter(items: List<MediaItem>, val listener: (MediaItem)->Unit): RecyclerView.Adapter<MediaAdapter.ViewHolder>() {
+class MediaAdapter(items: List<MediaItem>, val listener: Listener): RecyclerView.Adapter<MediaAdapter.ViewHolder>() {
 
 //    Since we are using lambdas, we dont need to create the onclick interface like we do in Java
 //    interface OnMediaClickListener{

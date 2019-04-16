@@ -9,17 +9,17 @@ import com.example.user.kotlin_basicconcepts.Sample.MediaItem
 fun main() {
 
 //    Generated Items
-    val media1 = MediaItem(
+    val media1 = MediaItem(1,
         "Title",
         "ThumbUrl",
         MediaItem.Type.PHOTO
     )
-    val media2 = MediaItem(
+    val media2 = MediaItem(1,
         "Title",
         "ThumbUrl",
         MediaItem.Type.PHOTO
     )
-    val media3 = MediaItem(
+    val media3 = MediaItem(3,
         "Title",
         "ThumbUrl2",
         MediaItem.Type.PHOTO

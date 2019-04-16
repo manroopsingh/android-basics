@@ -3,6 +3,7 @@ package com.example.user.kotlin_basicconcepts.Sample
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.GridLayoutManager
+import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
 import android.widget.Button
@@ -12,15 +13,22 @@ import com.example.user.kotlin_basicconcepts.R
 import com.example.user.kotlin_basicconcepts.apply2
 import com.example.user.kotlin_basicconcepts.toast
 import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.GlobalScope
+import kotlinx.coroutines.launch
+import kotlinx.coroutines.withContext
+import org.jetbrains.anko.startActivity
+
 
 class MainActivity : AppCompatActivity() {
 
+
     //    works as static in java, but can extend other class to have common functionality
     companion object {
-        var string: String = ""
+        var string: String = "DefaultValue"
     }
 
-    val adapter = MediaAdapter(emptyList()) { (title) -> toast(title) }
+    val adapter = MediaAdapter(emptyList()) { navigateToDetail(it) }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -68,6 +76,12 @@ class MainActivity : AppCompatActivity() {
 
     }
 
+    private fun navigateToDetail(item: MediaItem) {
+
+        startActivity<DetailActivity>(DetailActivity.ID to item.id)
+
+    }
+
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
         menuInflater.inflate(R.menu.main, menu)
         return true
@@ -75,20 +89,46 @@ class MainActivity : AppCompatActivity() {
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
 
-        MediaProvider.dataAsync { media ->
-            adapter.items =
-                when (item.itemId) {
-                    R.id.filter_all -> media
-                    R.id.filter_photos -> media.filter { it.type == MediaItem.Type.PHOTO }
-                    R.id.filter_videos -> media.filter { it.type == MediaItem.Type.VIDEO }
-
-                    else -> emptyList()
-                }
+        val filter: Filter = when (item.itemId) {
+            R.id.filter_videos -> Filter.ByType(MediaItem.Type.VIDEO)
+            R.id.filter_photos -> Filter.ByType(MediaItem.Type.PHOTO)
+            else -> Filter.None
         }
 
-
+        loadFilteredMedia(filter)
         return true
     }
+
+
+    private fun loadFilteredMedia(filter: Filter) {
+
+        GlobalScope.launch {
+            val catsMedia = getData("cats") //method on IO thread
+            val natureMedia = getData("nature") //method on IO thread
+            withContext(Dispatchers.Main) { updateAdapter(catsMedia + natureMedia, filter) }//method on UI thread
+        }
+    }
+
+    private suspend fun getData(type: String) = withContext(Dispatchers.IO) {
+        Log.d("Tag","Threadname: ${Thread.currentThread().name}")
+        MediaProvider.dataSync(type)
+    }
+
+    private fun updateAdapter(items: List<MediaItem>, filter: Filter) {
+
+        print("Size${items.size}")
+        items.forEach { print(it.thumbUrl) }
+        adapter.items = when (filter) {
+            is Filter.None -> items
+            is Filter.ByType -> items.filter { it.type == filter.type }
+        }
+    }
+
+    sealed class Filter {
+        object None : Filter()
+        class ByType(val type: MediaItem.Type) : Filter()
+    }
+
 
     /*
     Toast is a function that is displaying a text using the Toast class
