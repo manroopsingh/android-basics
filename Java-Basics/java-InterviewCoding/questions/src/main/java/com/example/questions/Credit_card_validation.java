@@ -13,7 +13,7 @@ public class Credit_card_validation {
     public static final String CARD = "card";
     public static void main(String[] args) {
         String[] cards = new String[]{"6724843711060148"};
-        String[] banned = new String[]{"675"};
+        String[] banned = new String[]{"674"};
 
 
         System.out.println(validateCreditCards(banned,cards));

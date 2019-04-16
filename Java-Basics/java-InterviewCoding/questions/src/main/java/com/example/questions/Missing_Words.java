@@ -1,6 +1,7 @@
 package com.example.questions;
 
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
 
 public class Missing_Words {
@@ -8,7 +9,7 @@ public class Missing_Words {
     public static void main(String[] args) {
 
 
-        missingWords("Hello how are you", "how are");
+        System.out.println(missingWordsOptimized("Hello how are you", "how are"));
 
     }
 
@@ -44,5 +45,33 @@ public class Missing_Words {
 
 
         return missingWords;
+    }
+
+    public static List<String> missingWordsOptimized(String s, String t) {
+
+        List<String> missingWords = new ArrayList<>();
+        String[] sArr = s.split("\\s");
+        String[] tArr = t.split("\\s");
+
+        int tIndex = 0;
+        int sIndex = 0;
+        while(tIndex<tArr.length){
+
+            if(tArr[tIndex].equals(sArr[sIndex])){
+                tIndex++;
+                sIndex++;
+            }else{
+                missingWords.add(sArr[sIndex]);
+                sIndex++;
+            }
+
+        }
+
+        for(int i= sIndex;i<sArr.length;i++){
+            missingWords.add(sArr[i]);
+        }
+        return missingWords;
+
+
     }
 }
