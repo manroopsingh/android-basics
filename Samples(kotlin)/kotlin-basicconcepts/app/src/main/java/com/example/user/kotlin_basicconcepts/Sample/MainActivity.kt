@@ -13,10 +13,8 @@ import com.example.user.kotlin_basicconcepts.R
 import com.example.user.kotlin_basicconcepts.apply2
 import com.example.user.kotlin_basicconcepts.toast
 import kotlinx.android.synthetic.main.activity_main.*
-import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.GlobalScope
-import kotlinx.coroutines.launch
-import kotlinx.coroutines.withContext
+import kotlinx.coroutines.*
+import org.jetbrains.anko.custom.async
 import org.jetbrains.anko.startActivity
 
 
@@ -103,14 +101,17 @@ class MainActivity : AppCompatActivity() {
     private fun loadFilteredMedia(filter: Filter) {
 
         GlobalScope.launch {
-            val catsMedia = getData("cats") //method on IO thread
+            val catsMedia = async (Dispatchers.IO){  MediaProvider.dataSync("cats")}//using the async block
             val natureMedia = getData("nature") //method on IO thread
-            withContext(Dispatchers.Main) { updateAdapter(catsMedia + natureMedia, filter) }//method on UI thread
+            withContext(Dispatchers.Main) { updateAdapter(catsMedia.getCompleted() + natureMedia, filter) }//method on UI thread
+
         }
     }
 
+/*
+     suspending functions are used for decoupling the async code into a different method
+*/
     private suspend fun getData(type: String) = withContext(Dispatchers.IO) {
-        Log.d("Tag","Threadname: ${Thread.currentThread().name}")
         MediaProvider.dataSync(type)
     }
 
