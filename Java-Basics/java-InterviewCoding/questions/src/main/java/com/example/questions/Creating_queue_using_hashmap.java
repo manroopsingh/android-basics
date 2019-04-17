@@ -21,9 +21,9 @@ public class Creating_queue_using_hashmap {
 
     public static class CustomQueue<E>{
 
-        HashMap<Integer, E> map;
-        private int head = 0;
-        private int tail = 0;
+        HashMap<Long, E> map;
+        private long  head = 0;
+        private long tail = 0;
 
         public CustomQueue() {
             map = new HashMap<>();
@@ -31,9 +31,9 @@ public class Creating_queue_using_hashmap {
 
         public E dequeue(){
             if(head>tail) return null;
-
             E e = map.get(head);
-            head++;
+            map.remove(head);
+            if(head>=tail) head++;
             return e;
         }
 
@@ -42,8 +42,6 @@ public class Creating_queue_using_hashmap {
             tail++;
             map.put(tail, e);
         }
-
-
 
     }
 
