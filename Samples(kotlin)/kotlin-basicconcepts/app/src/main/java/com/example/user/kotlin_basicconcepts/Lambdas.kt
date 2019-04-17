@@ -40,9 +40,9 @@ fun doAsyncWithLambda(x: Int, callback: (String) -> Unit) {
 
 fun applyOp(x: Int, y: Int, f: (Int, Int) -> Int): Int = f(x, y)
 
+inline fun twice(crossinline f: (Int)->Int): (Int) -> Int = {x-> f(f(x))}
+
 //writing your DSL with Lambdas and Extension function
-
-
 fun <T> T.apply2(f: T.() -> Unit): T {
     f()
     return this

@@ -16,9 +16,16 @@ import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.coroutines.*
 import org.jetbrains.anko.custom.async
 import org.jetbrains.anko.startActivity
+import kotlin.coroutines.CoroutineContext
+import kotlin.coroutines.resume
 
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : AppCompatActivity(), CoroutineScope {
+
+    private lateinit var job: Job
+
+    override val coroutineContext: CoroutineContext
+        get() = Dispatchers.Main + job
 
 
     //    works as static in java, but can extend other class to have common functionality
@@ -31,6 +38,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        job = Job()
 
 
         toast("This is the default text")//function call to toast method
@@ -71,7 +79,6 @@ class MainActivity : AppCompatActivity() {
             text = "Something else"
         }
 
-
     }
 
     private fun navigateToDetail(item: MediaItem) {
@@ -100,13 +107,36 @@ class MainActivity : AppCompatActivity() {
 
     private fun loadFilteredMedia(filter: Filter) {
 
-        GlobalScope.launch {
-            val catsMedia = async (Dispatchers.IO){  MediaProvider.dataSync("cats")}//using the async block
+        //GlobalScope.launch (Dispatchers.Main){  }
+        /*
+        The above code is refactored to just launch since the current activity is using a custom activity scope since
+        the activity is implementing a coroutine scope. And managing the scopes in the lifecycle methods would stop the
+        asynchronous tasks if the activities are destroyed
+        */
+        launch{
+            /*Async block
+            This block would not block the parent block but would run the job in parallel. We can also set the async
+            to be started when the await() method is called. It would return a Deferred object which extends Job
+            */
+            val catsMedia = async (Dispatchers.IO, CoroutineStart.LAZY){  MediaProvider.dataSync("cats")}
+
+            //Here getData is using a suspending function to get the data from the worker thread
             val natureMedia = getData("nature") //method on IO thread
-            withContext(Dispatchers.Main) { updateAdapter(catsMedia.getCompleted() + natureMedia, filter) }//method on UI thread
+
+            //Suspending function to replace the callback system with coroutine
+            val otherMedia = dataAsync()
+
+            updateAdapter(catsMedia.await() + natureMedia, filter)//method on UI thread since the parent is MAIN
 
         }
     }
+
+    suspend fun dataAsync(): List<MediaItem> = suspendCancellableCoroutine {continuation ->
+        MediaProvider.dataAsync {media ->
+            continuation.resume(media)
+        }
+    }
+
 
 /*
      suspending functions are used for decoupling the async code into a different method
@@ -130,6 +160,10 @@ class MainActivity : AppCompatActivity() {
         class ByType(val type: MediaItem.Type) : Filter()
     }
 
+    override fun onDestroy() {
+        job.cancel()
+        super.onDestroy()
+    }
 
     /*
     Toast is a function that is displaying a text using the Toast class
