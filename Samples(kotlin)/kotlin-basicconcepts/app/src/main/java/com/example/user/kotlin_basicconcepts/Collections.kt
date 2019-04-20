@@ -10,7 +10,9 @@ lateinit var testData : Array<Int>
 fun main() {
     instantiateCollection()
 
-
+    println(filterVotes(true))
+    println(searchCountryStartsWith("F"))
+    println(squareAllElements())
 }
 
 //instantiating collection in Kotlin
@@ -27,17 +29,17 @@ fun instantiateCollection() {
 }
 
 //filtering collections
-fun filterVotes(votes: List<Boolean>, type: Boolean): List<Boolean> = votes.filter { it == type }
+fun filterVotes(type: Boolean): List<Boolean> = votes.filter { it == type }
 
 //searching a collection
-fun searchCountryStartsWith(startsWith: String, countriesMap: Map<String, String>) = countriesMap.keys.filter {
+fun searchCountryStartsWith(startsWith: String) = countryToCapital.keys.filter {
     it.startsWith(
         startsWith
     )
 }
 
 ///mapping a collection
-fun squareAllElements(intArr: Array<Int>): Array<Int> = intArr.map { it*it } as Array<Int>
+fun squareAllElements(): Array<Int> = testData.map { it*it } as Array<Int>
 
 
 /*
