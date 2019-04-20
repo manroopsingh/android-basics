@@ -2,10 +2,13 @@ package com.example.user.kotlin_basicconcepts
 
 import com.example.user.kotlin_basicconcepts.Sample.MediaItem
 
-fun main() {
+lateinit var languages: Set<String>
+lateinit var votes: List<Boolean>
+lateinit var countryToCapital: Map<String, String>
+lateinit var testData : Array<Int>
 
-    val myIntList = listOf(MyInt(1), MyInt(2))
-    squareAllElements(myIntList)
+fun main() {
+    instantiateCollection()
 
 
 }
@@ -13,14 +16,13 @@ fun main() {
 //instantiating collection in Kotlin
 fun instantiateCollection() {
 //    Collections
-    val languages = setOf("Kotlin", "Java", "C++")
-    val votes = listOf(true, false, false, true)
-    val countryToCapital = mapOf(
+    languages = setOf("Kotlin", "Java", "C++")
+    votes = listOf(true, false, false, true)
+    countryToCapital = mapOf(
         "Germany" to "Berlin", "France" to "Paris"
     )
-
 //    Arrays
-    val testData = arrayOf(0, 1, 5, 9, 10)
+    testData = arrayOf(0, 1, 5, 9, 10)
 
 }
 
