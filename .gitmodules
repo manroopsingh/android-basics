@@ -1,0 +1,9 @@
+[submodule "codelabs/codelabs/kotlin-coroutines"]
+	path = codelabs/codelabs/kotlin-coroutines
+	url = https://github.com/googlecodelabs/kotlin-coroutines.git
+[submodule "codelabs/kotlin-coroutines"]
+	path = codelabs/kotlin-coroutines
+	url = https://github.com/googlecodelabs/kotlin-coroutines.git
+[submodule "Udacity/GradleForAndroidAndJava"]
+	path = Udacity/GradleForAndroidAndJava
+	url = https://github.com/udacity/ud867
