@@ -2,14 +2,12 @@ package com.example.user.kotlin_coroutines
 
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
-import android.util.Log
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.coroutines.*
-import kotlin.coroutines.CoroutineContext
 
-class MainActivity : AppCompatActivity(){
+class MainActivity : AppCompatActivity() {
 
-    val activityJob = Job()
+    var activityJob = Job()
     val activityScope = CoroutineScope(Dispatchers.Main + activityJob)
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -24,7 +22,7 @@ class MainActivity : AppCompatActivity(){
         }
 
         btnDoSomething.setOnClickListener {
-            testingGlobalScope()
+            //testingGlobalScope()
             testingActivityScope()
 
         }
@@ -32,29 +30,52 @@ class MainActivity : AppCompatActivity(){
     }
 
     fun testingGlobalScope() {
-        GlobalScope.launch {
-            delay(DELAY_TIME)
-            printThread("GlobalScope default launch", this)
-            withContext(Dispatchers.IO){
-                printThread("withContext IO", this)
-            }
-        }
+        startSampleJob("GlobalScope", GlobalScope)
     }
 
-    fun testingActivityScope() {
 
-        activityScope.launch {
-            delay(DELAY_TIME)
-            printThread("activityScope default launch", this)
-            withContext(Dispatchers.Unconfined){
-                printThread("withContext UnConfined", this)}
-        }
+    /**
+     * The activity scope is going to be cancel the coroutines if the activity
+     * if not on the foreground.
+     *
+     * Test the application by clicking the button "Do Something" and then moving
+     * away from the activity. You would notice that the coroutine after the delay
+     * is never executed.
+     */
+
+    private fun testingActivityScope() {
+
+        startSampleJob("activityScope", activityScope)
 
     }
+
+    /**
+     * Cancelling the children on the onStop method on the activity would cancel
+     * all the Coroutines running on that job. It would not cancel the job object itself
+     * so the doSomething button click would be able to restart the job
+     */
 
     override fun onStop() {
         super.onStop()
-        activityJob.cancel()
+        activityJob.cancelChildren()
+    }
+
+
+    private fun startSampleJob(scopeName: String, scope: CoroutineScope) {
+        scope.launch {
+            async { customDelay(1_000) }
+            customDelay(0)
+            printThread("$scopeName before delay", this)//runs on the main thread
+
+            delay(DELAY_TIME)//suspending function to cause a delay
+            printThread("$scopeName default launch", this)
+            withContext(Dispatchers.Unconfined) {
+                printThread("withContext UnConfined", this)
+            }
+            withContext(Dispatchers.IO) {
+                printThread("withContext IO", this)
+            }
+        }
     }
 
 }
