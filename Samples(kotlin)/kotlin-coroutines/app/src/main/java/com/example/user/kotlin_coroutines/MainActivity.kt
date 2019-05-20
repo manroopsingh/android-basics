@@ -14,25 +14,27 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+
+        testingRunBlocking()
+
+        btnDoSomething.setOnClickListener {
+            testingGlobalScope()
+            testingActivityScope()
+        }
+    }
+
+    private fun testingRunBlocking() {
         printTime("runBlocking", this) {
             runBlocking {
                 delay(DELAY_TIME)
                 printThread("runBlocking", this)
             }
         }
-
-        btnDoSomething.setOnClickListener {
-            //testingGlobalScope()
-            testingActivityScope()
-
-        }
-
     }
 
     fun testingGlobalScope() {
         startSampleJob("GlobalScope", GlobalScope)
     }
-
 
     /**
      * The activity scope is going to be cancel the coroutines if the activity
@@ -60,10 +62,14 @@ class MainActivity : AppCompatActivity() {
         activityJob.cancelChildren()
     }
 
+    /**
+     * [StartSampleJob] method is used with multiple coroutines for printing the logs as per
+     * the scope passed.
+     */
 
     private fun startSampleJob(scopeName: String, scope: CoroutineScope) {
         scope.launch {
-            async { customDelay(1_000) }
+            async { customDelay(1_000) }//would start the coroutine in a different context
             customDelay(0)
             printThread("$scopeName before delay", this)//runs on the main thread
 
@@ -77,5 +83,7 @@ class MainActivity : AppCompatActivity() {
             }
         }
     }
+
+
 
 }
