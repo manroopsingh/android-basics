@@ -41,7 +41,7 @@ Simple proof of concept samples for Android in Java
 ### Dependency injection
 | Sample        | Description |       
 | ------------- |-------------|
-| Dagger2 | Using values resource directory for qualifiers|
+| Dagger2 | Using values resource directory for qualifiers something|
 | Butterknife | Using values resource directory for qualifiers|
 
 ### Image loading
