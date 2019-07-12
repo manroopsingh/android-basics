@@ -47,7 +47,7 @@ Simple proof of concept samples for Android in Java
 ### Image loading
 | Sample        | Description |       
 | ------------- |-------------|
-| Glide | Using values resource directory for qualifiers|
+| Glide | Using values resource directory for qualifiers |
 | Picasso | Using values resource directory for qualifiers|
 
 ### ORMs
