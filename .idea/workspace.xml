@@ -2,7 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cf4af2bf-9241-443e-8eb2-e7ac5ef0f2b7" name="Default" comment="">
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/codelabs/android-navigation" beforeDir="false" afterPath="$PROJECT_DIR$/codelabs/android-navigation" afterDir="false" />
+=======
+      <change afterPath="$PROJECT_DIR$/codelabs/android-navigation/app/src/main/java/com/example/android/codelabs/navigation/ShoppingCartFragment.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codelabs/android-navigation/app/src/main/res/layout/fragment_shopping_cart.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/codelabs/android-navigation" beforeDir="false" afterPath="$PROJECT_DIR$/codelabs/android-navigation" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/codelabs/android-navigation/.idea/navEditor.xml" beforeDir="false" afterPath="$PROJECT_DIR$/codelabs/android-navigation/.idea/navEditor.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/codelabs/android-navigation/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/codelabs/android-navigation/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/codelabs/android-navigation/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/codelabs/android-navigation/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/codelabs/android-navigation/app/src/main/java/com/example/android/codelabs/navigation/DeepLinkAppWidgetProvider.kt" beforeDir="false" afterPath="$PROJECT_DIR$/codelabs/android-navigation/app/src/main/java/com/example/android/codelabs/navigation/DeepLinkAppWidgetProvider.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/codelabs/android-navigation/app/src/main/java/com/example/android/codelabs/navigation/FlowStepFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/codelabs/android-navigation/app/src/main/java/com/example/android/codelabs/navigation/FlowStepFragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/codelabs/android-navigation/app/src/main/java/com/example/android/codelabs/navigation/HomeFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/codelabs/android-navigation/app/src/main/java/com/example/android/codelabs/navigation/HomeFragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/codelabs/android-navigation/app/src/main/java/com/example/android/codelabs/navigation/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/codelabs/android-navigation/app/src/main/java/com/example/android/codelabs/navigation/MainActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/codelabs/android-navigation/app/src/main/res/menu/main_menu.xml" beforeDir="false" afterPath="$PROJECT_DIR$/codelabs/android-navigation/app/src/main/res/menu/main_menu.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/codelabs/android-navigation/app/src/main/res/menu/nav_drawer_menu.xml" beforeDir="false" afterPath="$PROJECT_DIR$/codelabs/android-navigation/app/src/main/res/menu/nav_drawer_menu.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/codelabs/android-navigation/app/src/main/res/menu/overflow_menu.xml" beforeDir="false" afterPath="$PROJECT_DIR$/codelabs/android-navigation/app/src/main/res/menu/overflow_menu.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/codelabs/android-navigation/app/src/main/res/navigation/mobile_navigation.xml" beforeDir="false" afterPath="$PROJECT_DIR$/codelabs/android-navigation/app/src/main/res/navigation/mobile_navigation.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/codelabs/android-navigation/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/codelabs/android-navigation/app/src/main/res/values/strings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/codelabs/android-navigation/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/codelabs/android-navigation/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/codelabs/android-navigation/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/codelabs/android-navigation/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+>>>>>>> 5770b0c6a59818ff7fb47de8c00454ba45f184ad
     </list>
     <ignored path="android-basics.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -22,11 +44,15 @@
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
+<<<<<<< HEAD
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="494">
               <caret line="26" selection-start-line="26" selection-end-line="26" />
             </state>
           </provider>
+=======
+          <provider selected="true" editor-type-id="text-editor" />
+>>>>>>> 5770b0c6a59818ff7fb47de8c00454ba45f184ad
         </entry>
       </file>
     </leaf>
@@ -42,10 +68,9 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1135" />
-    <option name="y" value="-20" />
-    <option name="width" value="1294" />
-    <option name="height" value="1407" />
+    <option name="x" value="23" />
+    <option name="width" value="3192" />
+    <option name="height" value="2160" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -79,13 +104,21 @@
           <select />
         </subPane>
       </pane>
+<<<<<<< HEAD
       <pane id="Scratches" />
+=======
+      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
+      <pane id="Scope" />
+>>>>>>> 5770b0c6a59818ff7fb47de8c00454ba45f184ad
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="android.sdk.path" value="$USER_HOME$/Library/Android/sdk" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Samples/android-Animation" />
+
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+
     <property name="settings.editor.selected.configurable" value="configurable.group.language" />
   </component>
   <component name="RunDashboard">
@@ -131,6 +164,10 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+<<<<<<< HEAD
+=======
+
+>>>>>>> 5770b0c6a59818ff7fb47de8c00454ba45f184ad
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -147,6 +184,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="3840" height="2160" extended-state="6" />
+<<<<<<< HEAD
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.08975713" />
@@ -157,6 +195,19 @@
       <window_info id="Capture Tool" order="5" />
       <window_info id="Captures" order="6" weight="0.25" />
       <window_info id="Build Variants" order="7" side_tool="true" />
+=======
+    <layout>
+      <window_info id="Resources Explorer" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.08975713" />
+      <window_info id="Structure" order="1" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Designer" order="4" />
+      <window_info id="Captures" order="5" side_tool="true" weight="0.25" />
+      <window_info id="Capture Tool" order="6" />
+      <window_info id="Build Variants" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Reviews" />
+>>>>>>> 5770b0c6a59818ff7fb47de8c00454ba45f184ad
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -167,15 +218,27 @@
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" />
+<<<<<<< HEAD
       <window_info anchor="bottom" id="Android Profiler" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Logcat" order="11" />
+=======
+      <window_info anchor="bottom" id="Logcat" order="10" />
+      <window_info anchor="bottom" id="Android Profiler" order="11" show_stripe_button="false" />
+      <window_info anchor="right" id="News Feed" />
+>>>>>>> 5770b0c6a59818ff7fb47de8c00454ba45f184ad
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
+<<<<<<< HEAD
       <window_info anchor="right" id="Fabric" order="4" />
       <window_info anchor="right" id="Palette&#9;" order="5" />
       <window_info anchor="right" id="Theme Preview" order="6" />
+=======
+      <window_info anchor="right" id="Theme Preview" order="4" />
+      <window_info anchor="right" id="Palette&#9;" order="5" />
+      <window_info anchor="right" id="Fabric" order="6" />
+>>>>>>> 5770b0c6a59818ff7fb47de8c00454ba45f184ad
       <window_info anchor="right" id="Device File Explorer" order="7" side_tool="true" />
     </layout>
   </component>
@@ -189,11 +252,15 @@
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/README.md">
+<<<<<<< HEAD
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="494">
           <caret line="26" selection-start-line="26" selection-end-line="26" />
         </state>
       </provider>
+=======
+      <provider selected="true" editor-type-id="text-editor" />
+>>>>>>> 5770b0c6a59818ff7fb47de8c00454ba45f184ad
       <provider editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="285">
