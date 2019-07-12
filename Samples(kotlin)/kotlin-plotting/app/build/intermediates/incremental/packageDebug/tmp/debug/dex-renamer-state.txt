@@ -1,0 +1,4 @@
+#Thu Jul 11 17:20:51 PDT 2019
+base.0=/Users/msingh/AndroidStudioProjects/android-basics/Samples(kotlin)/kotlin-plotting/app/build/intermediates/dex/debug/mergeDexDebug/out/classes.dex
+path.0=classes.dex
+renamed.0=classes.dex
